@@ -27,6 +27,20 @@ const SPORTS = [
   { value: 'cricket',  label: 'Cricket',  emoji: '🏏' },
 ]
 
+// ── Structured data for Google ─────────────────────────
+const structuredData = {
+  '@context':   'https://schema.org',
+  '@type':      'WebSite',
+  name:         'HuddleFinder',
+  url:          'https://www.huddlefinder.ca',
+  description:  'Find the best sports bars and watch parties in Canada. World Cup, NHL, NBA, NFL and more.',
+  potentialAction: {
+    '@type':       'SearchAction',
+    target:        'https://www.huddlefinder.ca/search?q={search_term_string}',
+    'query-input': 'required name=search_term_string',
+  },
+}
+
 function getDistanceKm(
   lat1: number, lng1: number,
   lat2: number, lng2: number
@@ -171,6 +185,12 @@ export default function HomePage() {
   return (
     <main className="pb-24 md:pb-8">
 
+      {/* ── Structured data for Google ── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+
       {/* ── DESKTOP hero — unchanged ── */}
       <div className="hidden md:block bg-brand-red px-6 py-24 text-center">
         <p className="text-white/80 text-xs font-bold uppercase tracking-widest mb-3">
@@ -203,9 +223,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* ── MOBILE hero — red banner, circular logo, white tagline ──
-          rounded-full clips the black corners of the jpg
-          showing only the circular logo on the red background    ── */}
+      {/* ── MOBILE hero ── */}
       <div className="md:hidden bg-brand-red px-6 py-6 text-center">
         <div className="h-20 w-20 rounded-full bg-white mx-auto mb-3 flex items-center justify-center shadow-lg shadow-black/20 p-3">
           <img
@@ -239,8 +257,6 @@ export default function HomePage() {
 
       {/* ── City selector ── */}
       <div className="max-w-7xl mx-auto px-4 pt-5 md:pt-8">
-
-        {/* Popular cities label — mobile only */}
         <div className="flex items-center justify-between mb-2">
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
             Popular cities
