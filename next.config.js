@@ -12,6 +12,10 @@ const withPWA = require('@ducanh2912/next-pwa').default({
 const nextConfig = {
   reactStrictMode: true,
   turbopack: {},
+
+  // ── Allow local network testing on mobile ──
+  allowedDevOrigins: ['192.168.1.85'],
+
   images: {
     remotePatterns: [
       {
@@ -20,10 +24,22 @@ const nextConfig = {
       },
     ],
   },
-  
+
+  // ── Fix Google sign-in COOP error ──────────
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Cross-Origin-Opener-Policy',
+            value: 'same-origin-allow-popups',
+          },
+        ],
+      },
+    ]
+  },
 }
 
+// ── Single export — PWA wraps everything ───
 module.exports = withPWA(nextConfig)
-module.exports = {
-  allowedDevOrigins: ['192.168.1.85'],
-}

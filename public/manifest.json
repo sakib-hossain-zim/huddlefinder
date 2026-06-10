@@ -1,7 +1,7 @@
 {
-  "name": "Huddlefinder",
-  "short_name": "Huddlefinder",
-  "description": "Canada's Live Sports Finder — Find your bar. Show up. Join the chant.",
+  "name": "HuddleFinder",
+  "short_name": "HuddleFinder",
+  "description": "Canada's Live Sports Finder — Find your venue. Show up. Join the huddle.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
@@ -12,7 +12,7 @@
       "src": "/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "/icons/icon-512x512.png",

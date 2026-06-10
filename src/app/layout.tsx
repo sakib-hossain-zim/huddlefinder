@@ -18,6 +18,17 @@ export const metadata: Metadata = {
     type: 'website',
   },
   manifest: '/manifest.json',
+
+  // ── PWA icons ──
+  icons: {
+    icon: [
+      { url: '/icons/favicon.ico' },
+      { url: '/icons/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/icons/favicon.svg',       type: 'image/svg+xml' },
+    ],
+    apple:    '/icons/apple-touch-icon.png',
+    shortcut: '/icons/favicon.ico',
+  },
 }
 
 export const viewport: Viewport = {
@@ -37,7 +48,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </Providers>
-        <SpeedInsights/>
+        <SpeedInsights />
       </body>
     </html>
   )
