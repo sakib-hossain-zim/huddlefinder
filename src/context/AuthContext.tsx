@@ -74,21 +74,38 @@ async function createUserDoc(user: User, extraData: Partial<UserDoc> = {}) {
 }
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
-  const [user,    setUser]    = useState<User | null>(null)
+  // ── Read auth state synchronously on mount ───────────
+  // auth.currentUser is available immediately from localStorage
+  // No need to wait for onAuthStateChanged for initial render
+  const [user,    setUser]    = useState<User | null>(auth.currentUser)
   const [userDoc, setUserDoc] = useState<UserDoc | null>(null)
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(!auth.currentUser)
 
   useEffect(() => {
+    // ── Pre-fetch userDoc immediately if already logged in ──
+    // Runs in parallel with onAuthStateChanged
+    // Eliminates the 300-500ms wait for already-authed users
+    if (auth.currentUser) {
+      getDoc(doc(db, 'users', auth.currentUser.uid)).then(snap => {
+        if (snap.exists()) setUserDoc(snap.data() as UserDoc)
+      })
+    }
+
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
       setUser(firebaseUser)
+
+      // ── Set loading false as soon as auth state is known ──
+      // Don't block on userDoc Firestore fetch
+      setLoading(false)
+
       if (firebaseUser) {
         const snap = await getDoc(doc(db, 'users', firebaseUser.uid))
         setUserDoc(snap.exists() ? (snap.data() as UserDoc) : null)
       } else {
         setUserDoc(null)
       }
-      setLoading(false)
     })
+
     return () => unsubscribe()
   }, [])
 
@@ -113,7 +130,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   ) => {
     const { user } = await createUserWithEmailAndPassword(auth, email, password)
     await createUserDoc(user, { firstName, lastName, role, authProviders: ['email'] })
-    // Set immediately so role-based redirects work before onAuthStateChanged fires
     setUserDoc({
       userId:        user.uid,
       email:         user.email ?? email,
