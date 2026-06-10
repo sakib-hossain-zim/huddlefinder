@@ -1,0 +1,132 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return request.auth.uid == userId;
+    }
+
+    function isVenueOwner(venueId) {
+      return isSignedIn() &&
+        get(/databases/$(database)/documents/venues/$(venueId)).data.ownerId == request.auth.uid;
+    }
+
+    function getUserRole() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && getUserRole() == 'admin';
+    }
+
+    // ── Users ─────────────────────────────────────────────
+    match /users/{userId} {
+      allow read:   if isOwner(userId) || isAdmin();
+      allow create: if isOwner(userId);
+      allow update: if isOwner(userId) || isAdmin();
+      allow delete: if isOwner(userId) || isAdmin();
+    }
+
+    // ── Venues ────────────────────────────────────────────
+    match /venues/{venueId} {
+      // Public read — fans need to discover venues
+      allow read: if true;
+
+      // Any signed in user can create — claim flow creates venue first
+      allow create: if isSignedIn();
+
+      // Only venue owner or admin can update
+      // Admin SDK bypasses these rules so verify flow works fine
+      allow update: if isAdmin()
+        || (isSignedIn() && resource.data.ownerId == request.auth.uid);
+
+      // No client-side deletes
+      allow delete: if isAdmin();
+    }
+
+    // ── Events ────────────────────────────────────────────
+    match /events/{eventId} {
+      // Public read — fans need to see events
+      allow read: if true;
+
+      // Only the venue owner can create events for their venue
+      allow create: if isSignedIn()
+        && isVenueOwner(request.resource.data.venueId);
+
+      // Venue owner can update anything
+      // Any signed-in user can update ONLY rsvpCount (for RSVP flow)
+      allow update: if isAdmin()
+        || (isSignedIn() && isVenueOwner(resource.data.venueId))
+        || (isSignedIn() && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['rsvpCount']));
+
+      allow delete: if isAdmin()
+        || (isSignedIn() && isVenueOwner(resource.data.venueId));
+    }
+
+    // ── RSVPs ─────────────────────────────────────────────
+    match /rsvps/{rsvpId} {
+      // Fan reads their own, venue owner reads for their venue
+      allow read: if isSignedIn()
+        && (
+          resource.data.userId == request.auth.uid
+          || isVenueOwner(resource.data.venueId)
+          || isAdmin()
+        );
+
+      // Fan can only RSVP as themselves
+      allow create: if isSignedIn()
+        && request.resource.data.userId == request.auth.uid;
+
+      allow update: if isSignedIn()
+        && resource.data.userId == request.auth.uid;
+
+      allow delete: if isSignedIn()
+        && (
+          resource.data.userId == request.auth.uid
+          || isVenueOwner(resource.data.venueId)
+          || isAdmin()
+        );
+    }
+
+    // ── RSVPs ─────────────────────────────────────────────
+    match /rsvps/{rsvpId} {
+      allow read: if isSignedIn() && (
+        resource.data.userId == request.auth.uid
+        || resource.data.venueOwnerId == request.auth.uid
+        || isAdmin()
+      );
+
+      allow create: if isSignedIn()
+        && request.resource.data.userId == request.auth.uid;
+
+      allow update: if isSignedIn()
+        && resource.data.userId == request.auth.uid;
+
+      allow delete: if isSignedIn() && (
+        resource.data.userId == request.auth.uid
+        || resource.data.venueOwnerId == request.auth.uid
+        || isAdmin()
+      );
+    }
+
+    // ── Tickets ───────────────────────────────────────────
+    match /tickets/{ticketId} {
+      allow read: if isSignedIn()
+        && (
+          resource.data.userId == request.auth.uid
+          || isVenueOwner(resource.data.venueId)
+          || isAdmin()
+        );
+
+      // Tickets only created server-side via Admin SDK
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+  }
+}

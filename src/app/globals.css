@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand-red:            #C02D28;
+  --color-brand-red-dark:       #8C1F1B;
+  --color-brand-red-light:      #FFF3F3;
+  --color-brand-charcoal:       #3E3E3D;
+  --color-brand-charcoal-light: #F2F2F2;
+  --color-background:           #FFFFFF;
+  --color-foreground:           #111111;
+  --font-sans: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+
+  h1 { @apply text-3xl font-bold text-brand-charcoal; }
+  h2 { @apply text-2xl font-bold text-brand-charcoal; }
+  h3 { @apply text-xl font-semibold text-brand-charcoal; }
+}
+
+@layer components {
+  /* Buttons */
+  .btn-primary {
+    @apply bg-brand-red text-white px-5 py-2 rounded-full
+           font-semibold text-sm hover:bg-brand-red-dark
+           transition-colors cursor-pointer;
+  }
+
+  .btn-secondary {
+    @apply border border-gray-200 text-brand-charcoal px-5 py-2
+           rounded-full font-semibold text-sm hover:border-brand-red
+           hover:text-brand-red transition-colors cursor-pointer;
+  }
+
+  .btn-ghost {
+    @apply text-brand-charcoal font-semibold text-sm
+           hover:text-brand-red transition-colors cursor-pointer;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white rounded-2xl border border-gray-100
+           shadow-sm hover:shadow-md transition-shadow;
+  }
+
+  /* Inputs */
+  .input {
+    @apply w-full bg-gray-50 border border-gray-200 rounded-full
+           px-4 py-2.5 text-sm text-gray-700 placeholder-gray-400
+           outline-none focus:border-brand-red focus:ring-2
+           focus:ring-brand-red-light transition-colors;
+  }
+
+  /* Section container */
+  .container-page {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Sport pill */
+  .sport-pill {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full
+           text-xs font-semibold bg-brand-charcoal-light
+           text-brand-charcoal;
+  }
+
+  .sport-pill-active {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full
+           text-xs font-semibold bg-brand-red text-white;
+  }
+
+  /* ── Custom animations ── */
+@keyframes scan-line {
+  0%   { top: 0%;   opacity: 1;   }
+  50%  {             opacity: 0.5; }
+  100% { top: 100%; opacity: 1;   }
+}
+
+.animate-scan-line {
+  animation: scan-line 2s ease-in-out infinite;
+  position: absolute;
+}
+
+/* ── html5-qrcode overrides ── */
+#qr-reader__scan_region {
+  background: transparent !important;
+  border:     none        !important;
+}
+
+/* Hide the duplicate cropped region image */
+#qr-reader__scan_region > img {
+  display: none !important;
+}
+
+#qr-reader__dashboard {
+  display: none !important;
+}
+
+/* ── html5-qrcode — hide duplicate view ── */
+#qr-reader {
+  border:   none   !important;
+  padding:  0      !important;
+  overflow: hidden !important;
+}
+
+#qr-reader__scan_region {
+  overflow:   hidden  !important;
+  max-height: 320px   !important;
+}
+
+#qr-reader video {
+  width:         100%         !important;
+  max-height:    320px        !important;
+  object-fit:    cover        !important;
+  border-radius: 1.5rem       !important;
+  display:       block        !important;
+}
+
+/* Hide second video, img, and canvas the library creates */
+#qr-reader__scan_region > img,
+#qr-reader__scan_region > canvas,
+#qr-reader__scan_region > video:nth-child(2),
+#qr-reader__scan_region > video ~ * {
+  display: none !important;
+}
+
+/* Hide the library's dashboard/controls */
+#qr-reader__dashboard,
+#qr-reader__header_message,
+#qr-reader__status_span {
+  display: none !important;
+}
+
+/* ── Mobile toast — sits above bottom nav bar ── */
+@media (max-width: 768px) {
+  [class*="toast"],
+  [class*="Toast"] {
+    bottom: 5.5rem !important;
+  }
+}
+
+/* ── Safe area for pages with fixed bottom content ── */
+.pb-safe-page {
+  padding-bottom: max(96px, calc(80px + env(safe-area-inset-bottom)));
+}
+
+/* ── Prevent content overflow on small screens ── */
+img, video {
+  max-width: 100%;
+}
+
+input[type="date"] {
+  min-height: 44px; /* iOS touch target minimum */
+}
+
+/* ── Bottom padding for mobile bottom bar ── */
+/* Prevents content hiding behind fixed bottom nav */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: calc(72px + env(safe-area-inset-bottom));
+  }
+}
+
+}

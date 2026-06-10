@@ -6,21 +6,47 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "import:venues": "ts-node --project tsconfig.scripts.json scripts/import-venues.ts",
+    "import:to-db": "ts-node --project tsconfig.scripts.json scripts/import-to-firestore.ts",
+    "check:venues": "ts-node --project tsconfig.scripts.json scripts/check-venues.ts"
   },
   "dependencies": {
+    "@ducanh2912/next-pwa": "^10.2.9",
+    "@heroicons/react": "^2.2.0",
+    "@react-google-maps/api": "^2.20.8",
+    "@sendgrid/mail": "^8.1.6",
+    "@stripe/react-stripe-js": "^6.2.0",
+    "@stripe/stripe-js": "^9.7.0",
+    "@yudiel/react-qr-scanner": "^2.5.1",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "firebase": "^12.12.1",
+    "firebase-admin": "^13.8.0",
+    "html5-qrcode": "^2.3.8",
     "next": "16.2.4",
+    "qrcode.react": "^4.2.0",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "react-hook-form": "^7.74.0",
+    "react-hot-toast": "^2.6.0",
+    "stripe": "^22.2.0",
+    "tailwind-merge": "^3.5.0",
+    "twilio": "^6.0.2",
+    "uuid": "^14.0.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^20.19.41",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/uuid": "^10.0.0",
+    "dotenv": "^17.4.2",
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
     "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   }
 }

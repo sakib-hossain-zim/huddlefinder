@@ -1,0 +1,6633 @@
+[
+  {
+    "name": "Shark Club Sports Bar & Grill",
+    "slug": "shark-club-sports-bar-grill-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "180 W Georgia St, Vancouver, BC V6B 4P4",
+    "shortAddress": "180 W Georgia St, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6B 4P4",
+    "location": {
+      "latitude": 49.278849,
+      "longitude": -123.1129919
+    },
+    "phone": "+1 604-687-4275",
+    "email": "",
+    "website": "https://www.sharkclub.com/location/vancouver/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "00:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJc-rQW01xhlQRSTGakHFDvjY",
+    "googleRating": 4.7,
+    "googleReviewCount": 2394,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.7,
+    "reviewCount": 2394,
+    "featured": false
+  },
+  {
+    "name": "Score on Davie",
+    "slug": "score-on-davie-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "1262 Davie St, Vancouver, BC V6E 1N3",
+    "shortAddress": "1262 Davie St, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6E 1N3",
+    "location": {
+      "latitude": 49.282288,
+      "longitude": -123.13467999999997
+    },
+    "phone": "+1 604-632-1646",
+    "email": "",
+    "website": "http://scoreondavie.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "01:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "10:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJuWIJjCtyhlQRbzI7maBcq8c",
+    "googleRating": 4.4,
+    "googleReviewCount": 3010,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.4,
+    "reviewCount": 3010,
+    "featured": false
+  },
+  {
+    "name": "Good Co. Granville",
+    "slug": "good-co-granville-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "965 Granville St, Vancouver, BC V6Z 1L3",
+    "shortAddress": "965 Granville St, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6Z 1L3",
+    "location": {
+      "latitude": 49.279712200000006,
+      "longitude": -123.1227289
+    },
+    "phone": "",
+    "email": "",
+    "website": "https://goodcobars.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Wednesday": {
+        "open": "17:00",
+        "close": "23:00"
+      },
+      "Thursday": {
+        "open": "17:00",
+        "close": "23:00"
+      },
+      "Friday": {
+        "open": "17:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "15:00",
+        "close": "02:30"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJO4AhIBNzhlQR1sdNx__mJ3k",
+    "googleRating": 4,
+    "googleReviewCount": 1890,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4,
+    "reviewCount": 1890,
+    "featured": false
+  },
+  {
+    "name": "One Under",
+    "slug": "one-under-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "476 Granville St, Vancouver, BC V6C 1V4",
+    "shortAddress": "476 Granville St, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6C 1V4",
+    "location": {
+      "latitude": 49.284690399999995,
+      "longitude": -123.11455049999999
+    },
+    "phone": "+1 604-559-4653",
+    "email": "",
+    "website": "http://www.oneunder.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "12:00",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "12:00",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "12:00",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "12:00",
+        "close": "00:00"
+      },
+      "Friday": {
+        "open": "12:00",
+        "close": "00:00"
+      },
+      "Saturday": {
+        "open": "10:00",
+        "close": "00:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJcydum3hxhlQR26EOBC7xoRg",
+    "googleRating": 4.3,
+    "googleReviewCount": 800,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.3,
+    "reviewCount": 800,
+    "featured": false
+  },
+  {
+    "name": "The Pint Public House",
+    "slug": "the-pint-public-house-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "455 Abbott St, Vancouver, BC V6B 2L2",
+    "shortAddress": "455 Abbott St, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6B 2L2",
+    "location": {
+      "latitude": 49.2814279,
+      "longitude": -123.1077303
+    },
+    "phone": "+1 604-684-0258",
+    "email": "",
+    "website": "https://vancouver.thepint.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "15:00",
+        "close": "01:00"
+      },
+      "Tuesday": {
+        "open": "15:00",
+        "close": "01:00"
+      },
+      "Wednesday": {
+        "open": "15:00",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "15:00",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "15:00",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "15:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJkaA0L3pxhlQRS7br6sCwIm4",
+    "googleRating": 4,
+    "googleReviewCount": 3267,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4,
+    "reviewCount": 3267,
+    "featured": false
+  },
+  {
+    "name": "The Moose Vancouver",
+    "slug": "the-moose-vancouver-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "724 Nelson St, Vancouver, BC V6Z 1A8",
+    "shortAddress": "724 Nelson St, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6Z 1A8",
+    "location": {
+      "latitude": 49.2794394,
+      "longitude": -123.12363939999997
+    },
+    "phone": "",
+    "email": "",
+    "website": "https://themoosevancouver.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "wheelchair",
+      "cocktails",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "12:00",
+        "close": "02:00"
+      },
+      "Monday": {
+        "open": "13:00",
+        "close": "02:00"
+      },
+      "Tuesday": {
+        "open": "13:00",
+        "close": "02:00"
+      },
+      "Wednesday": {
+        "open": "13:00",
+        "close": "02:00"
+      },
+      "Thursday": {
+        "open": "13:00",
+        "close": "02:00"
+      },
+      "Friday": {
+        "open": "12:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "12:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJ_Zzjn9VzhlQR2DRAs3m2SxM",
+    "googleRating": 4.5,
+    "googleReviewCount": 1295,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": false,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.5,
+    "reviewCount": 1295,
+    "featured": false
+  },
+  {
+    "name": "Lions Pub",
+    "slug": "lions-pub-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "888 W Cordova St, Vancouver, BC V6C 0A7",
+    "shortAddress": "888 W Cordova St, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6C 0A7",
+    "location": {
+      "latitude": 49.286936,
+      "longitude": -123.11467300000001
+    },
+    "phone": "+1 604-488-8602",
+    "email": "",
+    "website": "http://www.lionspub.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "00:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJH0xQYIJxhlQR5CW_L2HrdLY",
+    "googleRating": 4.3,
+    "googleReviewCount": 1521,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.3,
+    "reviewCount": 1521,
+    "featured": false
+  },
+  {
+    "name": "The Lamplighter Public House",
+    "slug": "the-lamplighter-public-house-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "92 Water St, Vancouver, BC V6B 2K8",
+    "shortAddress": "92 Water St, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6B 2K8",
+    "location": {
+      "latitude": 49.283710799999994,
+      "longitude": -123.1062305
+    },
+    "phone": "+1 604-687-4424",
+    "email": "",
+    "website": "https://www.freehouse.co/locations/lamplighter?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "wheelchair",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "16:00",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "16:00",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "16:00",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "16:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJEzyfYHdxhlQRC_Zlm3TTciw",
+    "googleRating": 4.1,
+    "googleReviewCount": 2156,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.1,
+    "reviewCount": 2156,
+    "featured": false
+  },
+  {
+    "name": "Moose's Down Under Bar and Grill - Vancouver",
+    "slug": "mooses-down-under-bar-and-grill-vancouver-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "830 W Pender St, Vancouver, BC V6C 1K6",
+    "shortAddress": "830 W Pender St, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6C 1K6",
+    "location": {
+      "latitude": 49.285643699999994,
+      "longitude": -123.11658809999999
+    },
+    "phone": "+1 604-683-3300",
+    "email": "",
+    "website": "http://www.moosesdownunder.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "live_dj",
+      "restroom",
+      "wheelchair",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Monday": {
+        "open": "11:00",
+        "close": "20:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Saturday": {
+        "open": "17:00",
+        "close": "00:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJLZ0lbYJxhlQRWlw69YPLrT4",
+    "googleRating": 4.3,
+    "googleReviewCount": 1488,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.3,
+    "reviewCount": 1488,
+    "featured": false
+  },
+  {
+    "name": "The Park Pub",
+    "slug": "the-park-pub-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "1755 Davie St, Vancouver, BC V6G 1W5",
+    "shortAddress": "1755 Davie St, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6G 1W5",
+    "location": {
+      "latitude": 49.2870025,
+      "longitude": -123.14102929999999
+    },
+    "phone": "+1 604-682-1831",
+    "email": "",
+    "website": "https://www.parkpub.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "07:00",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "07:30",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "07:30",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "07:30",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "07:30",
+        "close": "00:00"
+      },
+      "Friday": {
+        "open": "07:30",
+        "close": "01:00"
+      },
+      "Saturday": {
+        "open": "07:00",
+        "close": "01:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJmZqwSi9yhlQRwouQZ3IxzFI",
+    "googleRating": 4.4,
+    "googleReviewCount": 1207,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.4,
+    "reviewCount": 1207,
+    "featured": false
+  },
+  {
+    "name": "GRETA Bar YVR",
+    "slug": "greta-bar-yvr-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "50 W Cordova St, Vancouver, BC V6B 1C8",
+    "shortAddress": "50 W Cordova St, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6B 1C8",
+    "location": {
+      "latitude": 49.282633499999996,
+      "longitude": -123.105766
+    },
+    "phone": "+1 604-423-3081",
+    "email": "",
+    "website": "https://gretabar.com/vancouver/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "16:00",
+        "close": "02:00"
+      },
+      "Tuesday": {
+        "open": "16:00",
+        "close": "02:00"
+      },
+      "Wednesday": {
+        "open": "16:00",
+        "close": "02:00"
+      },
+      "Thursday": {
+        "open": "16:00",
+        "close": "02:00"
+      },
+      "Friday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "16:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJzekgeeJxhlQR2X_6Wx4q8Io",
+    "googleRating": 4.3,
+    "googleReviewCount": 1387,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.3,
+    "reviewCount": 1387,
+    "featured": false
+  },
+  {
+    "name": "The American",
+    "slug": "the-american-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "926 Main St, Vancouver, BC V6A 2W1",
+    "shortAddress": "926 Main St, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6A 2W1",
+    "location": {
+      "latitude": 49.2762792,
+      "longitude": -123.09960409999998
+    },
+    "phone": "+1 778-945-6751",
+    "email": "",
+    "website": "http://www.theamerican.bar/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "12:00",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "15:00",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "15:00",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "15:00",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "15:00",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "12:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "12:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJUQ1yDGVxhlQRV5UFZa1zmqI",
+    "googleRating": 4.2,
+    "googleReviewCount": 1566,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.2,
+    "reviewCount": 1566,
+    "featured": false
+  },
+  {
+    "name": "The Sportsbar LIVE! At Rogers Arena",
+    "slug": "the-sportsbar-live-at-rogers-arena-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "99 W Georgia St, Vancouver, BC V6B 1Z3",
+    "shortAddress": "99 W Georgia St, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6B 1Z3",
+    "location": {
+      "latitude": 49.2778853,
+      "longitude": -123.10968120000001
+    },
+    "phone": "+1 604-877-6787",
+    "email": "",
+    "website": "https://thesportsbar.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "wheelchair",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "12:01",
+        "close": "23:59"
+      },
+      "Monday": {
+        "open": "12:01",
+        "close": "23:59"
+      },
+      "Tuesday": {
+        "open": "12:01",
+        "close": "23:59"
+      },
+      "Wednesday": {
+        "open": "12:01",
+        "close": "23:59"
+      },
+      "Thursday": {
+        "open": "12:01",
+        "close": "23:59"
+      },
+      "Friday": {
+        "open": "12:01",
+        "close": "23:59"
+      },
+      "Saturday": {
+        "open": "12:01",
+        "close": "23:59"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJt1EDa3xxhlQRBJjbDcHFLvs",
+    "googleRating": 4.2,
+    "googleReviewCount": 480,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.2,
+    "reviewCount": 480,
+    "featured": false
+  },
+  {
+    "name": "The Ox Pub",
+    "slug": "the-ox-pub-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "800 Granville St, Vancouver, BC V6Z 1K3",
+    "shortAddress": "800 Granville St, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6Z 1K3",
+    "location": {
+      "latitude": 49.2811111,
+      "longitude": -123.11972219999998
+    },
+    "phone": "+1 778-737-5352",
+    "email": "",
+    "website": "",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "wheelchair",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:30",
+        "close": "00:30"
+      },
+      "Monday": {
+        "open": "11:30",
+        "close": "00:30"
+      },
+      "Tuesday": {
+        "open": "11:30",
+        "close": "00:30"
+      },
+      "Wednesday": {
+        "open": "11:30",
+        "close": "00:30"
+      },
+      "Thursday": {
+        "open": "11:30",
+        "close": "00:30"
+      },
+      "Friday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Saturday": {
+        "open": "11:30",
+        "close": "01:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJkcc8sH9xhlQRZj3OgaILoDY",
+    "googleRating": 4.1,
+    "googleReviewCount": 1647,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.1,
+    "reviewCount": 1647,
+    "featured": false
+  },
+  {
+    "name": "The Butcher & Bullock Public House",
+    "slug": "the-butcher-bullock-public-house-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "restaurant",
+    "dataSource": "google_places",
+    "address": "911 W Pender St, Vancouver, BC V6C 3B2",
+    "shortAddress": "911 W Pender St, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6C 3B2",
+    "location": {
+      "latitude": 49.286226799999994,
+      "longitude": -123.1169446
+    },
+    "phone": "+1 604-662-8866",
+    "email": "",
+    "website": "https://www.freehouse.co/locations/butcher-and-bullock?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "wheelchair",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Monday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Tuesday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Wednesday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Thursday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Friday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "16:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJc6oZR4JxhlQRRoI_dkj6Jko",
+    "googleRating": 4.1,
+    "googleReviewCount": 1426,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.1,
+    "reviewCount": 1426,
+    "featured": false
+  },
+  {
+    "name": "Relish The Pub",
+    "slug": "relish-the-pub-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "888 Nelson St, Vancouver, BC V6Z 2S1",
+    "shortAddress": "888 Nelson St, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6Z 2S1",
+    "location": {
+      "latitude": 49.2802589,
+      "longitude": -123.1250724
+    },
+    "phone": "+1 604-669-1962",
+    "email": "",
+    "website": "http://www.relishthepub.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "02:00"
+      },
+      "Monday": {
+        "open": "11:30",
+        "close": "02:00"
+      },
+      "Tuesday": {
+        "open": "11:30",
+        "close": "02:00"
+      },
+      "Wednesday": {
+        "open": "11:30",
+        "close": "02:00"
+      },
+      "Thursday": {
+        "open": "11:30",
+        "close": "02:00"
+      },
+      "Friday": {
+        "open": "11:30",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "11:30",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJvzgBQNVzhlQRFmLq5fcuTH4",
+    "googleRating": 4.2,
+    "googleReviewCount": 1188,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.2,
+    "reviewCount": 1188,
+    "featured": false
+  },
+  {
+    "name": "Bimini's Since 1975",
+    "slug": "biminis-since-1975-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "2010 W 4th Ave, Vancouver, BC V6J 1M9",
+    "shortAddress": "2010 W 4th Ave, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6J 1M9",
+    "location": {
+      "latitude": 49.2678833,
+      "longitude": -123.1508689
+    },
+    "phone": "+1 604-739-0222",
+    "email": "",
+    "website": "https://biminis1975.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "23:30"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJLbIl1LVzhlQRVgj6XXfyU8o",
+    "googleRating": 4.1,
+    "googleReviewCount": 1251,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.1,
+    "reviewCount": 1251,
+    "featured": false
+  },
+  {
+    "name": "The Regal Beagle",
+    "slug": "the-regal-beagle-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "2283 W Broadway, Vancouver, BC V6K 2E4",
+    "shortAddress": "2283 W Broadway, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6K 2E4",
+    "location": {
+      "latitude": 49.2640715,
+      "longitude": -123.1567843
+    },
+    "phone": "+1 604-739-0677",
+    "email": "",
+    "website": "http://thebeagle.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Saturday": {
+        "open": "10:00",
+        "close": "01:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJOdRcpLFzhlQRca2CuzsyTuA",
+    "googleRating": 4.2,
+    "googleReviewCount": 768,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.2,
+    "reviewCount": 768,
+    "featured": false
+  },
+  {
+    "name": "Hero's Welcome",
+    "slug": "heros-welcome-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "3917 Main St, Vancouver, BC V5V 3P3",
+    "shortAddress": "3917 Main St, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V5V 3P3",
+    "location": {
+      "latitude": 49.2501569,
+      "longitude": -123.10125260000001
+    },
+    "phone": "+1 604-879-1020",
+    "email": "",
+    "website": "http://heros-welcome.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "live_dj",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "13:00",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "16:00",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "16:00",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "16:00",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "16:00",
+        "close": "00:00"
+      },
+      "Friday": {
+        "open": "15:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "15:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJ2bdkkRJzhlQRBLbEbTfd4RE",
+    "googleRating": 4.4,
+    "googleReviewCount": 498,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.4,
+    "reviewCount": 498,
+    "featured": false
+  },
+  {
+    "name": "The Metropole Community Pub",
+    "slug": "the-metropole-community-pub-vancouver",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "320 Abbott St, Vancouver, BC V6B 2K9",
+    "shortAddress": "320 Abbott St, Vancouver",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6B 2K9",
+    "location": {
+      "latitude": 49.2825596,
+      "longitude": -123.10681939999998
+    },
+    "phone": "+1 604-423-5822",
+    "email": "",
+    "website": "http://www.themetpub.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "wheelchair",
+      "cocktails",
+      "reservations"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "15:00",
+        "close": "03:00"
+      },
+      "Monday": {
+        "open": "15:00",
+        "close": "03:00"
+      },
+      "Tuesday": {
+        "open": "15:00",
+        "close": "03:00"
+      },
+      "Wednesday": {
+        "open": "15:00",
+        "close": "03:00"
+      },
+      "Thursday": {
+        "open": "15:00",
+        "close": "03:00"
+      },
+      "Friday": {
+        "open": "12:00",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "15:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJ0a9U8HlxhlQR-DXhvPSC25E",
+    "googleRating": 4,
+    "googleReviewCount": 847,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": false,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4,
+    "reviewCount": 847,
+    "featured": false
+  },
+  {
+    "name": "Real Sports Bar & Grill",
+    "slug": "real-sports-bar-grill-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "15 York St, Toronto, ON M5J 2Z2",
+    "shortAddress": "Maple Leaf Square, 15 York St, Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5J 2Z2",
+    "location": {
+      "latitude": 43.6425933,
+      "longitude": -79.3800048
+    },
+    "phone": "+1 416-815-5983",
+    "email": "",
+    "website": "https://realsports.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:30",
+        "close": "23:00"
+      },
+      "Monday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Friday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Saturday": {
+        "open": "11:30",
+        "close": "00:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJt7OCSivL1IkRqoZxo87YSYc",
+    "googleRating": 4.2,
+    "googleReviewCount": 5874,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.2,
+    "reviewCount": 5874,
+    "featured": false
+  },
+  {
+    "name": "Scotland Yard Pub",
+    "slug": "scotland-yard-pub-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "restaurant",
+    "dataSource": "google_places",
+    "address": "56 The Esplanade, Toronto, ON M5E 1A6",
+    "shortAddress": "56 The Esplanade, Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5E 1A6",
+    "location": {
+      "latitude": 43.6470917,
+      "longitude": -79.37404169999999
+    },
+    "phone": "+1 416-364-6572",
+    "email": "",
+    "website": "http://www.scotlandyard.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "09:00",
+        "close": "02:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "09:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJFy2acS7L1IkRpOsjQVss1yw",
+    "googleRating": 4.7,
+    "googleReviewCount": 5021,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.7,
+    "reviewCount": 5021,
+    "featured": false
+  },
+  {
+    "name": "One Eyed Jack Restaurant & Bar Toronto",
+    "slug": "one-eyed-jack-restaurant-bar-toronto-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "287 Richmond St W, Toronto, ON M5V 1X1",
+    "shortAddress": "287 Richmond St W, Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5V 1X1",
+    "location": {
+      "latitude": 43.648594599999996,
+      "longitude": -79.39263319999999
+    },
+    "phone": "+1 416-953-9300",
+    "email": "",
+    "website": "https://oneeyedjackpub.com/toronto",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "10:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJuQ3P9E01K4gRyQ1vY1HZERM",
+    "googleRating": 4.7,
+    "googleReviewCount": 1842,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.7,
+    "reviewCount": 1842,
+    "featured": false
+  },
+  {
+    "name": "Kellys Landing",
+    "slug": "kellys-landing-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "restaurant",
+    "dataSource": "google_places",
+    "address": "123 Front St W, Toronto, ON M5J 2M2",
+    "shortAddress": "123 Front St W, Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5J 2M2",
+    "location": {
+      "latitude": 43.645019,
+      "longitude": -79.3827441
+    },
+    "phone": "+1 647-776-1133",
+    "email": "",
+    "website": "https://www.thelandinggroup.ca/en/locations/on/toronto/123-front-st.-w",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "wheelchair",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "01:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJraUHetM0K4gR3VS5TMC86_s",
+    "googleRating": 4.4,
+    "googleReviewCount": 7358,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.4,
+    "reviewCount": 7358,
+    "featured": false
+  },
+  {
+    "name": "Loose Moose / Antler Room",
+    "slug": "loose-moose-antler-room-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "146 Front St W, Toronto, ON M5J 1G2",
+    "shortAddress": "146 Front St W, Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5J 1G2",
+    "location": {
+      "latitude": 43.6452275,
+      "longitude": -79.38395600000001
+    },
+    "phone": "+1 416-977-8840",
+    "email": "",
+    "website": "https://theloosemoose.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "live_dj",
+      "restroom",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "11:30",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "11:30",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJWYMdhdM0K4gRbMQqRvZfb3c",
+    "googleRating": 4.3,
+    "googleReviewCount": 7713,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.3,
+    "reviewCount": 7713,
+    "featured": false
+  },
+  {
+    "name": "Jack Astor's Bar & Grill Front Street",
+    "slug": "jack-astors-bar-grill-front-street-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "144 Front St W, Toronto, ON M5J 2L7",
+    "shortAddress": "144 Front St W, Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5J 2L7",
+    "location": {
+      "latitude": 43.6454042,
+      "longitude": -79.383916
+    },
+    "phone": "+1 416-585-2121",
+    "email": "",
+    "website": "https://jackastors.com/?locationId=937",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJK2lqhdM0K4gRRLfXBys5VBc",
+    "googleRating": 4.2,
+    "googleReviewCount": 8446,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.2,
+    "reviewCount": 8446,
+    "featured": false
+  },
+  {
+    "name": "CRAFT Beer Market Toronto",
+    "slug": "craft-beer-market-toronto-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "restaurant",
+    "dataSource": "google_places",
+    "address": "1 Adelaide St E, Toronto, ON M5C 2V9",
+    "shortAddress": "1 Adelaide St E, Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5C 2V9",
+    "location": {
+      "latitude": 43.6499671,
+      "longitude": -79.37805929999999
+    },
+    "phone": "+1 437-922-2337",
+    "email": "",
+    "website": "https://www.craftbeermarket.ca/locations/toronto/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJi6Ta8jLL1IkRzzQWPcDj0KQ",
+    "googleRating": 4.3,
+    "googleReviewCount": 5875,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.3,
+    "reviewCount": 5875,
+    "featured": false
+  },
+  {
+    "name": "King Taps First Canadian Place",
+    "slug": "king-taps-first-canadian-place-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "restaurant",
+    "dataSource": "google_places",
+    "address": "100 King St W, Toronto, ON M5X 1E1",
+    "shortAddress": "First Canadian Place, 100 King St W, Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5X 1E1",
+    "location": {
+      "latitude": 43.648485799999996,
+      "longitude": -79.38224699999999
+    },
+    "phone": "+1 289-367-8808",
+    "email": "",
+    "website": "https://kingtaps.com/locations/king-street/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "01:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJ9y-dotI0K4gR8C-CfDq_pm8",
+    "googleRating": 4.3,
+    "googleReviewCount": 4856,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.3,
+    "reviewCount": 4856,
+    "featured": false
+  },
+  {
+    "name": "LOCAL Public Eatery Adelaide",
+    "slug": "local-public-eatery-adelaide-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "restaurant",
+    "dataSource": "google_places",
+    "address": "141 Adelaide St W, Toronto, ON M5H 3L5",
+    "shortAddress": "141 Adelaide St W, Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5H 3L5",
+    "location": {
+      "latitude": 43.648957599999996,
+      "longitude": -79.38434079999999
+    },
+    "phone": "+1 647-805-0777",
+    "email": "",
+    "website": "https://localpubliceatery.com/neighbourhoods/adelaide/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "01:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "10:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJ6bm7PPA1K4gRRtyCbgLhJMM",
+    "googleRating": 4.7,
+    "googleReviewCount": 1451,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.7,
+    "reviewCount": 1451,
+    "featured": false
+  },
+  {
+    "name": "Walrus Pub & Beer Hall",
+    "slug": "walrus-pub-beer-hall-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "restaurant",
+    "dataSource": "google_places",
+    "address": "187 Bay St., Toronto, ON M5L 1A1",
+    "shortAddress": "187 Bay St., Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5L 1A1",
+    "location": {
+      "latitude": 43.6474749,
+      "longitude": -79.3795693
+    },
+    "phone": "+1 416-363-7261",
+    "email": "",
+    "website": "https://www.freehouse.co/locations/walrus?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Monday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Friday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Saturday": {
+        "open": "17:00",
+        "close": "00:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJFR3SOS3L1IkR-YBjvlYwYoM",
+    "googleRating": 4.3,
+    "googleReviewCount": 2490,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.3,
+    "reviewCount": 2490,
+    "featured": false
+  },
+  {
+    "name": "Duke's Refresher St Lawrence",
+    "slug": "dukes-refresher-st-lawrence-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "73 Front St E, Toronto, ON M5E 1V9",
+    "shortAddress": "73 Front St E, Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5E 1V9",
+    "location": {
+      "latitude": 43.6485525,
+      "longitude": -79.3729104
+    },
+    "phone": "+1 416-603-8826",
+    "email": "",
+    "website": "https://dukesrefresher.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "16:00",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "16:00",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "16:00",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "16:00",
+        "close": "00:00"
+      },
+      "Friday": {
+        "open": "16:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJC1uy-WnL1IkR2oVpHdObQl4",
+    "googleRating": 4.3,
+    "googleReviewCount": 2286,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.3,
+    "reviewCount": 2286,
+    "featured": false
+  },
+  {
+    "name": "St. Louis Bar & Grill",
+    "slug": "st-louis-bar-grill-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "595 Bay St. A09, Toronto, ON M5G 2R3",
+    "shortAddress": "595 Bay St. A09, Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5G 2R3",
+    "location": {
+      "latitude": 43.656219799999995,
+      "longitude": -79.38329089999999
+    },
+    "phone": "+1 416-668-0688",
+    "email": "",
+    "website": "https://locations.stlouiswings.com/on-toronto-5216/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Friday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Saturday": {
+        "open": "11:30",
+        "close": "01:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJKRxf-8o0K4gRDb2SihszZCg",
+    "googleRating": 4.2,
+    "googleReviewCount": 2569,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.2,
+    "reviewCount": 2569,
+    "featured": false
+  },
+  {
+    "name": "The Pint Public House",
+    "slug": "the-pint-public-house-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "Up The Stairs!, 277 Front St W, Toronto, ON M5V 2X4",
+    "shortAddress": "Up The Stairs!, 277 Front St W, Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5V 2X4",
+    "location": {
+      "latitude": 43.6437883,
+      "longitude": -79.38827859999999
+    },
+    "phone": "+1 647-340-6395",
+    "email": "",
+    "website": "http://thepintto.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Tuesday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Wednesday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "11:30",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "11:30",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJq6qqptY0K4gR90v2Ho2x4Ns",
+    "googleRating": 4.1,
+    "googleReviewCount": 3048,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.1,
+    "reviewCount": 3048,
+    "featured": false
+  },
+  {
+    "name": "Score on King",
+    "slug": "score-on-king-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "restaurant",
+    "dataSource": "google_places",
+    "address": "107 King St E, Toronto, ON M5C 1G6",
+    "shortAddress": "107 King St E, Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5C 1G6",
+    "location": {
+      "latitude": 43.64983730000001,
+      "longitude": -79.37407859999999
+    },
+    "phone": "+1 416-519-4654",
+    "email": "",
+    "website": "https://scoreonking.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJS1zmefHL1IkR6bxAlE12OnA",
+    "googleRating": 4.4,
+    "googleReviewCount": 1688,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.4,
+    "reviewCount": 1688,
+    "featured": false
+  },
+  {
+    "name": "The Dock Ellis",
+    "slug": "the-dock-ellis-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "1280 Dundas St W, Toronto, ON M6J 1X7",
+    "shortAddress": "1280 Dundas St W, Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M6J 1X7",
+    "location": {
+      "latitude": 43.6496158,
+      "longitude": -79.42531819999999
+    },
+    "phone": "+1 416-792-8472",
+    "email": "",
+    "website": "http://thedockellis.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "12:00",
+        "close": "02:00"
+      },
+      "Monday": {
+        "open": "15:00",
+        "close": "02:00"
+      },
+      "Tuesday": {
+        "open": "15:00",
+        "close": "02:00"
+      },
+      "Wednesday": {
+        "open": "15:00",
+        "close": "02:00"
+      },
+      "Thursday": {
+        "open": "15:00",
+        "close": "02:00"
+      },
+      "Friday": {
+        "open": "15:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "12:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJl0FCoPg0K4gROPuF6-De2Rc",
+    "googleRating": 4.4,
+    "googleReviewCount": 540,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.4,
+    "reviewCount": 540,
+    "featured": false
+  },
+  {
+    "name": "Sportsnet Grill",
+    "slug": "sportsnet-grill-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "1 Blue Jays Way, Toronto, ON M5V 1J3",
+    "shortAddress": "1 Blue Jays Way, Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5V 1J3",
+    "location": {
+      "latitude": 43.641804,
+      "longitude": -79.38914199999999
+    },
+    "phone": "+1 416-341-5045",
+    "email": "",
+    "website": "http://www.sportsnetgrill.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "07:30",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "07:00",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "07:00",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "07:00",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "07:00",
+        "close": "00:00"
+      },
+      "Friday": {
+        "open": "07:00",
+        "close": "00:00"
+      },
+      "Saturday": {
+        "open": "07:30",
+        "close": "00:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJzbrH6tc0K4gRNBEBmtOP_6I",
+    "googleRating": 4.3,
+    "googleReviewCount": 615,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.3,
+    "reviewCount": 615,
+    "featured": false
+  },
+  {
+    "name": "Beertown - Toronto",
+    "slug": "beertown-toronto-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "restaurant",
+    "dataSource": "google_places",
+    "address": "125 Wellington St W, Toronto, ON M5J 0E8",
+    "shortAddress": "125 Wellington St W, Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5J 0E8",
+    "location": {
+      "latitude": 43.6462058,
+      "longitude": -79.3843065
+    },
+    "phone": "+1 437-377-2337",
+    "email": "",
+    "website": "http://www.beertown.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "wheelchair",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "10:30",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Saturday": {
+        "open": "10:30",
+        "close": "01:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJ0TZdsmI1K4gRk3g1azhlw-Q",
+    "googleRating": 4.4,
+    "googleReviewCount": 1493,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.4,
+    "reviewCount": 1493,
+    "featured": false
+  },
+  {
+    "name": "The Draft Room",
+    "slug": "the-draft-room-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "395 Keele St, Old Toronto, ON M6P 2K9",
+    "shortAddress": "395 Keele St, Old Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M6P 2K9",
+    "location": {
+      "latitude": 43.6660216,
+      "longitude": -79.46456959999999
+    },
+    "phone": "+1 416-760-0101",
+    "email": "",
+    "website": "http://www.draftroom.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "10:30",
+        "close": "02:00"
+      },
+      "Monday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Tuesday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Wednesday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "11:30",
+        "close": "02:00"
+      },
+      "Friday": {
+        "open": "11:30",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "10:30",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJxVFSUgY1K4gRkn06Umag1Vg",
+    "googleRating": 4.8,
+    "googleReviewCount": 276,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.8,
+    "reviewCount": 276,
+    "featured": false
+  },
+  {
+    "name": "The Bottom Line",
+    "slug": "the-bottom-line-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "22 Front St W, Toronto, ON M5J 1C4",
+    "shortAddress": "22 Front St W, Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5J 1C4",
+    "location": {
+      "latitude": 43.6465208,
+      "longitude": -79.3778797
+    },
+    "phone": "+1 416-362-7585",
+    "email": "",
+    "website": "",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Monday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "00:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJYZ-WAS3L1IkRiynaqBHsQZs",
+    "googleRating": 4,
+    "googleReviewCount": 734,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4,
+    "reviewCount": 734,
+    "featured": false
+  },
+  {
+    "name": "NBA Courtside Restaurant",
+    "slug": "nba-courtside-restaurant-toronto",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "restaurant",
+    "dataSource": "google_places",
+    "address": "15 Queens Quay E #101, Toronto, ON M5E 0C5",
+    "shortAddress": "15 Queens Quay E #101, Toronto",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5E 0C5",
+    "location": {
+      "latitude": 43.6420667,
+      "longitude": -79.37369269999999
+    },
+    "phone": "+1 416-967-5550",
+    "email": "",
+    "website": "https://nbarestaurant.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "12:00",
+        "close": "22:00"
+      },
+      "Monday": {
+        "open": "12:00",
+        "close": "22:00"
+      },
+      "Tuesday": {
+        "open": "11:30",
+        "close": "23:00"
+      },
+      "Wednesday": {
+        "open": "11:30",
+        "close": "23:00"
+      },
+      "Thursday": {
+        "open": "11:30",
+        "close": "23:00"
+      },
+      "Friday": {
+        "open": "12:00",
+        "close": "00:00"
+      },
+      "Saturday": {
+        "open": "12:00",
+        "close": "00:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJr61p-W_L1IkRsWc4IyERNfA",
+    "googleRating": 4.3,
+    "googleReviewCount": 1063,
+    "goodForWatchingSports": true,
+    "priceLevel": "",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.3,
+    "reviewCount": 1063,
+    "featured": false
+  },
+  {
+    "name": "The Canadian Brewhouse (Calgary University District)",
+    "slug": "the-canadian-brewhouse-calgary-university-district-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "3953 Univ Ave NW #220, Calgary, AB T3B 6K3",
+    "shortAddress": "3953 Univ Ave NW #220, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T3B 6K3",
+    "location": {
+      "latitude": 51.0780974,
+      "longitude": -114.1453265
+    },
+    "phone": "+1 587-943-4470",
+    "email": "",
+    "website": "https://thecanadianbrewhouse.com/locations/calgary/#university-district",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Monday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Tuesday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Wednesday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "11:30",
+        "close": "02:00"
+      },
+      "Friday": {
+        "open": "11:30",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "11:30",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJqbwMe8tvcVMRimMB39Gv1-8",
+    "googleRating": 4.7,
+    "googleReviewCount": 2210,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.7,
+    "reviewCount": 2210,
+    "featured": false
+  },
+  {
+    "name": "The Ship & Anchor",
+    "slug": "the-ship-anchor-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "534 17 Ave SW, Calgary, AB T2S 0B1",
+    "shortAddress": "534 17 Ave SW, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2S 0B1",
+    "location": {
+      "latitude": 51.0380222,
+      "longitude": -114.0737722
+    },
+    "phone": "+1 403-245-3333",
+    "email": "",
+    "website": "http://www.shipandanchor.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "09:00",
+        "close": "02:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "10:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJqfx9XVFocVMRYgRdkQ__hP8",
+    "googleRating": 4.4,
+    "googleReviewCount": 4314,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": false,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.4,
+    "reviewCount": 4314,
+    "featured": false
+  },
+  {
+    "name": "LOCAL Public Eatery 8th Avenue",
+    "slug": "local-public-eatery-8th-avenue-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "restaurant",
+    "dataSource": "google_places",
+    "address": "310 8 Ave SW, Calgary, AB T2P 1C1",
+    "shortAddress": "Dome Tower, 310 8 Ave SW, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2P 1C1",
+    "location": {
+      "latitude": 51.0458265,
+      "longitude": -114.0685829
+    },
+    "phone": "+1 403-264-7808",
+    "email": "",
+    "website": "https://localpubliceatery.com/neighbourhoods/8th-ave/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Saturday": {
+        "open": "10:00",
+        "close": "01:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJmfuJH_1vcVMReYmlxi1xsRw",
+    "googleRating": 4.5,
+    "googleReviewCount": 3287,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.5,
+    "reviewCount": 3287,
+    "featured": false
+  },
+  {
+    "name": "Leopold’s Tavern Calgary - Beltline",
+    "slug": "leopolds-tavern-calgary-beltline-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "1201 1 St SW, Calgary, AB T2R 0V3",
+    "shortAddress": "1201 1 St SW, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2R 0V3",
+    "location": {
+      "latitude": 51.0413625,
+      "longitude": -114.0660805
+    },
+    "phone": "+1 855-522-5367",
+    "email": "",
+    "website": "http://leopoldstavern.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJZ90n0gJwcVMRJJ-gwYPIJnc",
+    "googleRating": 4.6,
+    "googleReviewCount": 2188,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": false,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.6,
+    "reviewCount": 2188,
+    "featured": false
+  },
+  {
+    "name": "Schanks Sports Grill",
+    "slug": "schanks-sports-grill-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "9627 Macleod Trail S, Calgary, AB T2J 0P6",
+    "shortAddress": "9627 Macleod Trail S, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2J 0P6",
+    "location": {
+      "latitude": 50.9694266,
+      "longitude": -114.07349099999999
+    },
+    "phone": "+1 403-253-7300",
+    "email": "",
+    "website": "https://schanks.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Monday": {
+        "open": "11:30",
+        "close": "23:00"
+      },
+      "Tuesday": {
+        "open": "11:30",
+        "close": "23:00"
+      },
+      "Wednesday": {
+        "open": "11:30",
+        "close": "23:30"
+      },
+      "Thursday": {
+        "open": "11:30",
+        "close": "23:30"
+      },
+      "Friday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "01:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJ2efesyRxcVMRwgLD9dsAVgI",
+    "googleRating": 4,
+    "googleReviewCount": 1835,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4,
+    "reviewCount": 1835,
+    "featured": false
+  },
+  {
+    "name": "Mug Shotz Sports Bar & Grill",
+    "slug": "mug-shotz-sports-bar-grill-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "restaurant",
+    "dataSource": "google_places",
+    "address": "2808 Ogden Rd SE, Calgary, AB T2G 4N1",
+    "shortAddress": "2808 Ogden Rd SE, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2G 4N1",
+    "location": {
+      "latitude": 51.0293236,
+      "longitude": -114.030159
+    },
+    "phone": "+1 403-264-4441",
+    "email": "",
+    "website": "https://www.facebook.com/pages/Mug-Shotz-Sports-Bar-Grill-Official/126805540725404",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Tuesday": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "Saturday": {
+        "open": "12:00",
+        "close": "21:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJBUzCX596cVMR2xeaeja_Ynk",
+    "googleRating": 4.5,
+    "googleReviewCount": 2176,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.5,
+    "reviewCount": 2176,
+    "featured": false
+  },
+  {
+    "name": "Greta YYC",
+    "slug": "greta-yyc-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "213 10 Ave SW, Calgary, AB T2R 0A4",
+    "shortAddress": "213 10 Ave SW, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2R 0A4",
+    "location": {
+      "latitude": 51.0432069,
+      "longitude": -114.0666787
+    },
+    "phone": "+1 403-984-6405",
+    "email": "",
+    "website": "https://gretabar.com/calgary/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "15:00",
+        "close": "02:00"
+      },
+      "Tuesday": {
+        "open": "15:00",
+        "close": "02:00"
+      },
+      "Wednesday": {
+        "open": "15:00",
+        "close": "02:00"
+      },
+      "Thursday": {
+        "open": "15:00",
+        "close": "02:00"
+      },
+      "Friday": {
+        "open": "15:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "15:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJa3cjO1FxcVMR1N7zAlM1wo0",
+    "googleRating": 4.4,
+    "googleReviewCount": 2377,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.4,
+    "reviewCount": 2377,
+    "featured": false
+  },
+  {
+    "name": "Side Street Pub & Grill",
+    "slug": "side-street-pub-grill-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "1167 Kensington Crescent NW, Calgary, AB T2N 1X7",
+    "shortAddress": "Kensington House, 1167 Kensington Crescent NW, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2N 1X7",
+    "location": {
+      "latitude": 51.0521173,
+      "longitude": -114.08924139999999
+    },
+    "phone": "+1 403-270-3880",
+    "email": "",
+    "website": "http://www.sidestreetpubandgrill.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJnQBW_OhvcVMRqsfcdldw81w",
+    "googleRating": 4.5,
+    "googleReviewCount": 1764,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.5,
+    "reviewCount": 1764,
+    "featured": false
+  },
+  {
+    "name": "Garage Sports Bar",
+    "slug": "garage-sports-bar-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "250 6 Ave SW #181, Calgary, AB T2P 3H7",
+    "shortAddress": "Bow Valley Square, 250 6 Ave SW #181, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2P 3H7",
+    "location": {
+      "latitude": 51.0477832,
+      "longitude": -114.06742080000001
+    },
+    "phone": "+1 403-262-6762",
+    "email": "",
+    "website": "http://www.the-garage.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:30",
+        "close": "22:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Saturday": {
+        "open": "11:30",
+        "close": "00:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJGVIdPfpvcVMR1GE3waZnCGQ",
+    "googleRating": 4.1,
+    "googleReviewCount": 1170,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.1,
+    "reviewCount": 1170,
+    "featured": false
+  },
+  {
+    "name": "Bottlescrew Bill's Pub",
+    "slug": "bottlescrew-bills-pub-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "140 10 Ave SW, Calgary, AB T2R 0A3",
+    "shortAddress": "140 10 Ave SW, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2R 0A3",
+    "location": {
+      "latitude": 51.043603999999995,
+      "longitude": -114.065449
+    },
+    "phone": "+1 403-263-7900",
+    "email": "",
+    "website": "http://bottlescrewbill.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Monday": {
+        "open": "11:30",
+        "close": "02:00"
+      },
+      "Tuesday": {
+        "open": "11:30",
+        "close": "02:00"
+      },
+      "Wednesday": {
+        "open": "11:30",
+        "close": "02:00"
+      },
+      "Thursday": {
+        "open": "11:30",
+        "close": "02:00"
+      },
+      "Friday": {
+        "open": "11:30",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "11:30",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJaXsunQJwcVMRCuAvLbVAbZw",
+    "googleRating": 4.4,
+    "googleReviewCount": 1705,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.4,
+    "reviewCount": 1705,
+    "featured": false
+  },
+  {
+    "name": "PinBar",
+    "slug": "pinbar-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "501 17 Ave SW, Calgary, AB T2S 0A9",
+    "shortAddress": "501 17 Ave SW, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2S 0A9",
+    "location": {
+      "latitude": 51.037702499999995,
+      "longitude": -114.0717289
+    },
+    "phone": "+1 403-930-8175",
+    "email": "",
+    "website": "http://pinbaryyc.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Monday": {
+        "open": "17:00",
+        "close": "00:30"
+      },
+      "Tuesday": {
+        "open": "17:00",
+        "close": "00:30"
+      },
+      "Wednesday": {
+        "open": "17:00",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "17:00",
+        "close": "02:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJF7aJGxxwcVMRhVv4h8skSbE",
+    "googleRating": 4.4,
+    "googleReviewCount": 1555,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.4,
+    "reviewCount": 1555,
+    "featured": false
+  },
+  {
+    "name": "Jamesons Pub - 17th Ave",
+    "slug": "jamesons-pub-17th-ave-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "1230 17 Ave SW, Calgary, AB T2T 0B8",
+    "shortAddress": "1230 17 Ave SW, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2T 0B8",
+    "location": {
+      "latitude": 51.037940199999994,
+      "longitude": -114.09080519999999
+    },
+    "phone": "+1 403-984-9445",
+    "email": "",
+    "website": "http://www.jamesonspubs.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "23:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Saturday": {
+        "open": "10:00",
+        "close": "01:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJa60sVCdwcVMRWr5S3UjLloo",
+    "googleRating": 4.3,
+    "googleReviewCount": 1724,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.3,
+    "reviewCount": 1724,
+    "featured": false
+  },
+  {
+    "name": "National",
+    "slug": "national-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "restaurant",
+    "dataSource": "google_places",
+    "address": "341 10 Ave SW, Calgary, AB T2R 0C5",
+    "shortAddress": "341 10 Ave SW, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2R 0C5",
+    "location": {
+      "latitude": 51.0433507,
+      "longitude": -114.07006609999999
+    },
+    "phone": "+1 403-650-1045",
+    "email": "",
+    "website": "https://www.ntnl.ca/10th-avenue",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "12:00",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "12:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJQcEru-JvcVMRZGi64Ixb6SU",
+    "googleRating": 4,
+    "googleReviewCount": 3011,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4,
+    "reviewCount": 3011,
+    "featured": false
+  },
+  {
+    "name": "Hudsons Canada's Pub",
+    "slug": "hudsons-canadas-pub-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "1201 5 St SW, Calgary, AB T2R 0Y6",
+    "shortAddress": "1201 5 St SW, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2R 0Y6",
+    "location": {
+      "latitude": 51.0415662,
+      "longitude": -114.0744271
+    },
+    "phone": "+1 403-457-1119",
+    "email": "",
+    "website": "http://www.hudsonscanadaspub.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJS_U59h1wcVMRtKzZzFb6fcA",
+    "googleRating": 4.2,
+    "googleReviewCount": 1935,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.2,
+    "reviewCount": 1935,
+    "featured": false
+  },
+  {
+    "name": "Hidden Spot Entertainment and Arcade Bar",
+    "slug": "hidden-spot-entertainment-and-arcade-bar-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "2323 32 Ave NE #125, Calgary, AB T2E 6Z3",
+    "shortAddress": "2323 32 Ave NE #125, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2E 6Z3",
+    "location": {
+      "latitude": 51.0799812,
+      "longitude": -114.0069212
+    },
+    "phone": "+1 403-457-9565",
+    "email": "",
+    "website": "http://hiddenspotyyc.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Monday": {
+        "open": "15:00",
+        "close": "01:00"
+      },
+      "Tuesday": {
+        "open": "15:00",
+        "close": "01:00"
+      },
+      "Wednesday": {
+        "open": "15:00",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "15:00",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJSRtR6-BkcVMR45UckVFEgeo",
+    "googleRating": 4.2,
+    "googleReviewCount": 590,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.2,
+    "reviewCount": 590,
+    "featured": false
+  },
+  {
+    "name": "Bear & Kilt Freehouse",
+    "slug": "bear-kilt-freehouse-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "110 8 Ave SW, Calgary, AB T2P 1B3",
+    "shortAddress": "110 8 Ave SW, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2P 1B3",
+    "location": {
+      "latitude": 51.0456794,
+      "longitude": -114.06369099999999
+    },
+    "phone": "+1 403-232-8442",
+    "email": "",
+    "website": "https://www.facebook.com/pages/category/Pub/Bear-Kilt-142779135768529/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "cocktails",
+      "reservations"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "18:00",
+        "close": "02:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJuZdYwP1vcVMRXCx5ES9txwQ",
+    "googleRating": 4.4,
+    "googleReviewCount": 1106,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": false,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.4,
+    "reviewCount": 1106,
+    "featured": false
+  },
+  {
+    "name": "Trolley 5 Brewpub",
+    "slug": "trolley-5-brewpub-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "restaurant",
+    "dataSource": "google_places",
+    "address": "728 17 Ave SW, Calgary, AB T2S 0B7",
+    "shortAddress": "728 17 Ave SW, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2S 0B7",
+    "location": {
+      "latitude": 51.037949399999995,
+      "longitude": -114.07852489999999
+    },
+    "phone": "+1 403-454-3731",
+    "email": "",
+    "website": "http://www.trolley5.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "11:30",
+        "close": "00:00"
+      },
+      "Friday": {
+        "open": "11:30",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "10:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJg2ThvNdvcVMR2Pxq-hs7KOU",
+    "googleRating": 4.2,
+    "googleReviewCount": 1520,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.2,
+    "reviewCount": 1520,
+    "featured": false
+  },
+  {
+    "name": "The Cat 'n Fiddle Pub",
+    "slug": "the-cat-n-fiddle-pub-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "540 16 Ave NW, Calgary, AB T2M 0J4",
+    "shortAddress": "540 16 Ave NW, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2M 0J4",
+    "location": {
+      "latitude": 51.0671444,
+      "longitude": -114.0737678
+    },
+    "phone": "+1 403-289-0414",
+    "email": "",
+    "website": "http://www.catnfiddleyyc.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "10:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJUQHDY4pvcVMRbK8oo8oksnk",
+    "googleRating": 4.3,
+    "googleReviewCount": 1198,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.3,
+    "reviewCount": 1198,
+    "featured": false
+  },
+  {
+    "name": "Social Beer Haus",
+    "slug": "social-beer-haus-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "220 8 Ave SW, Calgary, AB T2P 1B5",
+    "shortAddress": "220 8 Ave SW, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2P 1B5",
+    "location": {
+      "latitude": 51.045795999999996,
+      "longitude": -114.0666541
+    },
+    "phone": "+1 403-474-6466",
+    "email": "",
+    "website": "https://socialbeerhaus.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJAQC0AP1vcVMRwr6P5pbmHt4",
+    "googleRating": 4.3,
+    "googleReviewCount": 1093,
+    "goodForWatchingSports": true,
+    "priceLevel": "",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.3,
+    "reviewCount": 1093,
+    "featured": false
+  },
+  {
+    "name": "The Imperial Tap",
+    "slug": "the-imperial-tap-calgary",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "503 4 Ave SW, Calgary, AB T2P 0J8",
+    "shortAddress": "503 4 Ave SW, Calgary",
+    "city": "Calgary",
+    "province": "AB",
+    "postalCode": "T2P 0J8",
+    "location": {
+      "latitude": 51.0494152,
+      "longitude": -114.0718373
+    },
+    "phone": "+1 403-452-0539",
+    "email": "",
+    "website": "http://imperialtap.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Monday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "01:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJ5RB-kvtvcVMRBYewJx5VhR8",
+    "googleRating": 4.2,
+    "googleReviewCount": 1205,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.2,
+    "reviewCount": 1205,
+    "featured": false
+  },
+  {
+    "name": "Brasseurs du Monde",
+    "slug": "brasseurs-du-monde-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "1567 R. Saint-Denis, Montréal, QC H2X 3K3",
+    "shortAddress": "1567 R. Saint-Denis, Montréal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H2X 3K3",
+    "location": {
+      "latitude": 45.514739999999996,
+      "longitude": -73.5622101
+    },
+    "phone": "+1 514-307-7666",
+    "email": "",
+    "website": "https://brasseursdumonde.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "00:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "00:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Saturday": {
+        "open": "10:00",
+        "close": "01:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJ0wlQK7MbyUwRZ7g3CMX46aI",
+    "googleRating": 4.6,
+    "googleReviewCount": 6387,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.6,
+    "reviewCount": 6387,
+    "featured": false
+  },
+  {
+    "name": "Pub Wolf & Workman",
+    "slug": "pub-wolf-workman-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "139 Rue St-Paul Ouest, Montréal, QC H2Y 1Z5",
+    "shortAddress": "139 Rue St-Paul Ouest, Montréal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H2Y 1Z5",
+    "location": {
+      "latitude": 45.5037576,
+      "longitude": -73.554915
+    },
+    "phone": "+1 514-737-1787",
+    "email": "",
+    "website": "http://www.wolfandworkman.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "01:00"
+      },
+      "Monday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Tuesday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Wednesday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "11:30",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "11:30",
+        "close": "02:00"
+      },
+      "Saturday": {
+        "open": "10:00",
+        "close": "02:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJQ5FDbfsbyUwR7KC5OLT_6m4",
+    "googleRating": 4.6,
+    "googleReviewCount": 2773,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.6,
+    "reviewCount": 2773,
+    "featured": false
+  },
+  {
+    "name": "Brass Door Pub",
+    "slug": "brass-door-pub-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "2171 Rue Crescent, Montréal, QC H3G 2C1",
+    "shortAddress": "2171 Rue Crescent, Montréal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H3G 2C1",
+    "location": {
+      "latitude": 45.4987453,
+      "longitude": -73.5785863
+    },
+    "phone": "+1 438-408-4248",
+    "email": "",
+    "website": "http://brassdoor.pub/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Monday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Tuesday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Wednesday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Thursday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Friday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "16:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJEXf3NkAayUwR9EsgmQSPNr0",
+    "googleRating": 4.7,
+    "googleReviewCount": 1828,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.7,
+    "reviewCount": 1828,
+    "featured": false
+  },
+  {
+    "name": "McLean's Pub",
+    "slug": "mcleans-pub-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "1210 Rue Peel, Montréal, QC H3B 2T6",
+    "shortAddress": "1210 Rue Peel, Montréal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H3B 2T6",
+    "location": {
+      "latitude": 45.499542299999995,
+      "longitude": -73.57214069999999
+    },
+    "phone": "+1 514-392-7770",
+    "email": "",
+    "website": "http://www.mcleanspub.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJ4Yi_tkMayUwRQC5BTTU87tU",
+    "googleRating": 4.3,
+    "googleReviewCount": 2830,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.3,
+    "reviewCount": 2830,
+    "featured": false
+  },
+  {
+    "name": "Bruno Sport Bar",
+    "slug": "bruno-sport-bar-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "313 Rue Beaubien E, Montréal, QC H2S 1R9",
+    "shortAddress": "313 Rue Beaubien E, Montréal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H2S 1R9",
+    "location": {
+      "latitude": 45.5331031,
+      "longitude": -73.6060992
+    },
+    "phone": "+1 514-271-8364",
+    "email": "",
+    "website": "",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "08:00",
+        "close": "03:00"
+      },
+      "Monday": {
+        "open": "08:00",
+        "close": "03:00"
+      },
+      "Tuesday": {
+        "open": "08:00",
+        "close": "03:00"
+      },
+      "Wednesday": {
+        "open": "08:00",
+        "close": "03:00"
+      },
+      "Thursday": {
+        "open": "08:00",
+        "close": "03:00"
+      },
+      "Friday": {
+        "open": "08:00",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "08:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJKRUfX24ZyUwR4EdufeLa0PA",
+    "googleRating": 4.6,
+    "googleReviewCount": 548,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.6,
+    "reviewCount": 548,
+    "featured": false
+  },
+  {
+    "name": "Ye Olde Orchard Pub and Grill",
+    "slug": "ye-olde-orchard-pub-and-grill-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "1189 Rue de la Montagne, Montréal, QC H3G 1Z2",
+    "shortAddress": "de la Montagne, 1189 Rue de la Montagne, Montreal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H3G 1Z2",
+    "location": {
+      "latitude": 45.4972753,
+      "longitude": -73.573415
+    },
+    "phone": "+1 514-874-1569",
+    "email": "",
+    "website": "http://www.yeoldeorchard.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout",
+      "delivery"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:30",
+        "close": "03:00"
+      },
+      "Monday": {
+        "open": "11:30",
+        "close": "03:00"
+      },
+      "Tuesday": {
+        "open": "11:30",
+        "close": "03:00"
+      },
+      "Wednesday": {
+        "open": "11:30",
+        "close": "03:00"
+      },
+      "Thursday": {
+        "open": "11:30",
+        "close": "03:00"
+      },
+      "Friday": {
+        "open": "11:30",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "11:30",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJixNqdEIayUwRZV7VH4QEEOE",
+    "googleRating": 4.4,
+    "googleReviewCount": 1889,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": true,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.4,
+    "reviewCount": 1889,
+    "featured": false
+  },
+  {
+    "name": "Moose Bawr",
+    "slug": "moose-bawr-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "1817 Rue Sainte-Catherine Ouest, Montréal, QC H3H 1M2",
+    "shortAddress": "1817 Sainte-Catherine St. West, Montreal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H3H 1M2",
+    "location": {
+      "latitude": 45.4935865,
+      "longitude": -73.57972160000001
+    },
+    "phone": "+1 514-846-6673",
+    "email": "",
+    "website": "http://moosebawr.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "cocktails",
+      "reservations"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "10:30",
+        "close": "03:00"
+      },
+      "Monday": {
+        "open": "10:30",
+        "close": "03:00"
+      },
+      "Tuesday": {
+        "open": "10:30",
+        "close": "03:00"
+      },
+      "Wednesday": {
+        "open": "10:30",
+        "close": "03:00"
+      },
+      "Thursday": {
+        "open": "10:30",
+        "close": "03:00"
+      },
+      "Friday": {
+        "open": "10:30",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "10:30",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJg1TBjWsayUwRIJAq9bMpNic",
+    "googleRating": 4.2,
+    "googleReviewCount": 2101,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": false,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.2,
+    "reviewCount": 2101,
+    "featured": false
+  },
+  {
+    "name": "Mad Hatter Pub",
+    "slug": "mad-hatter-pub-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "1240 Rue Crescent, Montréal, QC H3G 2A9",
+    "shortAddress": "1240 Rue Crescent, Montréal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H3G 2A9",
+    "location": {
+      "latitude": 45.496702,
+      "longitude": -73.575262
+    },
+    "phone": "",
+    "email": "",
+    "website": "https://www.madhattermtl.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "17:00",
+        "close": "03:00"
+      },
+      "Monday": {
+        "open": "17:00",
+        "close": "03:00"
+      },
+      "Tuesday": {
+        "open": "17:00",
+        "close": "03:00"
+      },
+      "Wednesday": {
+        "open": "17:00",
+        "close": "03:00"
+      },
+      "Thursday": {
+        "open": "17:00",
+        "close": "03:00"
+      },
+      "Friday": {
+        "open": "17:00",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "17:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJ0Qa2wmkayUwRLEUayRmhA9k",
+    "googleRating": 4.2,
+    "googleReviewCount": 1980,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.2,
+    "reviewCount": 1980,
+    "featured": false
+  },
+  {
+    "name": "Sir Winston Churchill Pub",
+    "slug": "sir-winston-churchill-pub-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "1455 Rue Crescent, Montréal, QC H3G 2B2",
+    "shortAddress": "1455 Rue Crescent, Montréal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H3G 2B2",
+    "location": {
+      "latitude": 45.4979112,
+      "longitude": -73.5768909
+    },
+    "phone": "+1 514-288-3814",
+    "email": "",
+    "website": "https://www.swcpc.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "live_dj",
+      "restroom",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "12:00",
+        "close": "01:00"
+      },
+      "Monday": {
+        "open": "12:00",
+        "close": "01:00"
+      },
+      "Tuesday": {
+        "open": "12:00",
+        "close": "01:00"
+      },
+      "Wednesday": {
+        "open": "12:00",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "12:00",
+        "close": "03:00"
+      },
+      "Friday": {
+        "open": "12:00",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "12:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJz1on3UEayUwRfPsiQVDBUC8",
+    "googleRating": 4,
+    "googleReviewCount": 2667,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4,
+    "reviewCount": 2667,
+    "featured": false
+  },
+  {
+    "name": "NYKS",
+    "slug": "nyks-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "1250 Rue de Bleury, Montréal, QC H3B 2W4",
+    "shortAddress": "1250 Rue de Bleury, Montréal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H3B 2W4",
+    "location": {
+      "latitude": 45.506032,
+      "longitude": -73.56668300000001
+    },
+    "phone": "+1 514-866-1787",
+    "email": "",
+    "website": "https://www.nyks.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "15:00",
+        "close": "03:00"
+      },
+      "Monday": {
+        "open": "11:30",
+        "close": "03:00"
+      },
+      "Tuesday": {
+        "open": "11:30",
+        "close": "03:00"
+      },
+      "Wednesday": {
+        "open": "11:30",
+        "close": "03:00"
+      },
+      "Thursday": {
+        "open": "11:30",
+        "close": "03:00"
+      },
+      "Friday": {
+        "open": "11:30",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "15:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJU7GJhE8ayUwRXLyaLw_HE1c",
+    "googleRating": 4.4,
+    "googleReviewCount": 3165,
+    "goodForWatchingSports": false,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.4,
+    "reviewCount": 3165,
+    "featured": false
+  },
+  {
+    "name": "Chez Miller | L'ORIGINAL",
+    "slug": "chez-miller-loriginal-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "1840 R. Atateken, Montréal, QC H2L 3L6",
+    "shortAddress": "1840 R. Atateken, Montréal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H2L 3L6",
+    "location": {
+      "latitude": 45.5195521,
+      "longitude": -73.5622264
+    },
+    "phone": "+1 438-381-0609",
+    "email": "",
+    "website": "http://chezmiller.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "cocktails"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Monday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Tuesday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Wednesday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Thursday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Friday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "16:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJUwAghmIbyUwRQYe6lENiddY",
+    "googleRating": 4.7,
+    "googleReviewCount": 155,
+    "goodForWatchingSports": true,
+    "priceLevel": "",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": false,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": false,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.7,
+    "reviewCount": 155,
+    "featured": false
+  },
+  {
+    "name": "Pub Saint Pierre",
+    "slug": "pub-saint-pierre-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "restaurant",
+    "dataSource": "google_places",
+    "address": "410 Rue Saint-Pierre, Montréal, QC H2Y 2M2",
+    "shortAddress": "410 Rue Saint-Pierre, Montréal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H2Y 2M2",
+    "location": {
+      "latitude": 45.501308599999994,
+      "longitude": -73.5566671
+    },
+    "phone": "+1 514-985-5204",
+    "email": "",
+    "website": "http://www.pubsaintpierre.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "10:00",
+        "close": "03:00"
+      },
+      "Monday": {
+        "open": "15:00",
+        "close": "03:00"
+      },
+      "Tuesday": {
+        "open": "15:00",
+        "close": "03:00"
+      },
+      "Wednesday": {
+        "open": "15:00",
+        "close": "03:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "10:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJ70ShA1kayUwR8YPg0PDFpic",
+    "googleRating": 4.6,
+    "googleReviewCount": 2068,
+    "goodForWatchingSports": false,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.6,
+    "reviewCount": 2068,
+    "featured": false
+  },
+  {
+    "name": "Pub Andrew’s",
+    "slug": "pub-andrews-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "1239 Rue Guy, Montréal, QC H3H 2K5",
+    "shortAddress": "1239 Rue Guy, Montréal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H3H 2K5",
+    "location": {
+      "latitude": 45.49484330000001,
+      "longitude": -73.5770086
+    },
+    "phone": "+1 514-932-4584",
+    "email": "",
+    "website": "https://www.facebook.com/PubAndrews/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "cocktails"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJCyzx1WsayUwRmRf0Zc7KNTs",
+    "googleRating": 4.3,
+    "googleReviewCount": 547,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": false,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": false,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.3,
+    "reviewCount": 547,
+    "featured": false
+  },
+  {
+    "name": "Les Trois Monkeys",
+    "slug": "les-trois-monkeys-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "restaurant",
+    "dataSource": "google_places",
+    "address": "1455 Rue Peel, Montréal, QC H3A 1T5",
+    "shortAddress": "1455 Rue Peel, Montréal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H3A 1T5",
+    "location": {
+      "latitude": 45.5003537,
+      "longitude": -73.5734171
+    },
+    "phone": "+1 514-847-2222",
+    "email": "",
+    "website": "https://lestroismonkeys.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "01:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "01:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJSZSqVwAbyUwR5AmJc5hPLB0",
+    "googleRating": 4.2,
+    "googleReviewCount": 605,
+    "goodForWatchingSports": true,
+    "priceLevel": "",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.2,
+    "reviewCount": 605,
+    "featured": false
+  },
+  {
+    "name": "Bar Dominion",
+    "slug": "bar-dominion-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "restaurant",
+    "dataSource": "google_places",
+    "address": "1243 Rue Metcalfe, Montréal, QC H3B 2V5",
+    "shortAddress": "1243 Rue Metcalfe, Montréal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H3B 2V5",
+    "location": {
+      "latitude": 45.500611199999994,
+      "longitude": -73.5715384
+    },
+    "phone": "+1 514-303-0266",
+    "email": "",
+    "website": "http://www.bar-dominion.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "restroom",
+      "parking",
+      "cocktails",
+      "reservations"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "16:00",
+        "close": "01:00"
+      },
+      "Monday": {
+        "open": "16:00",
+        "close": "01:00"
+      },
+      "Tuesday": {
+        "open": "16:00",
+        "close": "01:00"
+      },
+      "Wednesday": {
+        "open": "16:00",
+        "close": "01:00"
+      },
+      "Thursday": {
+        "open": "16:00",
+        "close": "01:00"
+      },
+      "Friday": {
+        "open": "16:00",
+        "close": "01:00"
+      },
+      "Saturday": {
+        "open": "16:00",
+        "close": "01:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJyfoxlEMayUwR7G2ZSXAiQ4M",
+    "googleRating": 4.6,
+    "googleReviewCount": 1442,
+    "goodForWatchingSports": false,
+    "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": false,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.6,
+    "reviewCount": 1442,
+    "featured": false
+  },
+  {
+    "name": "Ziggy's Pub",
+    "slug": "ziggys-pub-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "1470 Rue Crescent, Montréal, QC H3G 2B6",
+    "shortAddress": "1470 Rue Crescent, Montréal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H3G 2B6",
+    "location": {
+      "latitude": 45.4977229,
+      "longitude": -73.57729669999999
+    },
+    "phone": "+1 514-285-8855",
+    "email": "",
+    "website": "http://www.ziggyspub.ca/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "cocktails"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "12:00",
+        "close": "03:00"
+      },
+      "Monday": {
+        "open": "14:00",
+        "close": "03:00"
+      },
+      "Tuesday": {
+        "open": "14:00",
+        "close": "03:00"
+      },
+      "Wednesday": {
+        "open": "14:00",
+        "close": "03:00"
+      },
+      "Thursday": {
+        "open": "14:00",
+        "close": "03:00"
+      },
+      "Friday": {
+        "open": "14:00",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "12:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJy7LsAGoayUwRaXwXhq2w7yE",
+    "googleRating": 4.1,
+    "googleReviewCount": 507,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": false,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": false,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.1,
+    "reviewCount": 507,
+    "featured": false
+  },
+  {
+    "name": "Barfly",
+    "slug": "barfly-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "4062 Boul. Saint-Laurent, Montréal, QC H2W 1Y8",
+    "shortAddress": "4062 Boul. Saint-Laurent, Montréal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H2W 1Y8",
+    "location": {
+      "latitude": 45.517043099999995,
+      "longitude": -73.580043
+    },
+    "phone": "+1 514-284-6665",
+    "email": "",
+    "website": "",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "live_dj",
+      "restroom",
+      "cocktails"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Monday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Tuesday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Wednesday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Thursday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Friday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "16:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJHS8ALTMayUwRhWE5dlJNbNs",
+    "googleRating": 4.2,
+    "googleReviewCount": 429,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": false,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": false,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.2,
+    "reviewCount": 429,
+    "featured": false
+  },
+  {
+    "name": "Taverne Midway",
+    "slug": "taverne-midway-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "1219 Boul. Saint-Laurent, Montréal, QC H2X 2S6",
+    "shortAddress": "1219 Boul. Saint-Laurent, Montréal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H2X 2S6",
+    "location": {
+      "latitude": 45.5097306,
+      "longitude": -73.5632694
+    },
+    "phone": "+1 514-398-9669",
+    "email": "",
+    "website": "http://www.tavernemidway.com/",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Monday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Tuesday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Wednesday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Thursday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Friday": {
+        "open": "16:00",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "16:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJDYi_dE4ayUwROD9V9XzpP8Y",
+    "googleRating": 4.3,
+    "googleReviewCount": 1453,
+    "goodForWatchingSports": false,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": false,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.3,
+    "reviewCount": 1453,
+    "featured": false
+  },
+  {
+    "name": "Maison Publique McLean's",
+    "slug": "maison-publique-mcleans-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "pub",
+    "dataSource": "google_places",
+    "address": "1420 Rue Peel, Montréal, QC H3A 1S8",
+    "shortAddress": "1420 Rue Peel, Montréal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H3A 1S8",
+    "location": {
+      "latitude": 45.500204599999996,
+      "longitude": -73.573628
+    },
+    "phone": "+1 514-392-7770",
+    "email": "",
+    "website": "http://mcleanspub.com/public-house",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "live_dj",
+      "restroom",
+      "wheelchair",
+      "parking",
+      "cocktails",
+      "reservations",
+      "takeout"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Monday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Tuesday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Wednesday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Thursday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Friday": {
+        "open": "11:00",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "11:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJM76psFcbyUwR3u0a8qOy6Xs",
+    "googleRating": 4.5,
+    "googleReviewCount": 206,
+    "goodForWatchingSports": true,
+    "priceLevel": "",
+    "outdoorSeating": false,
+    "goodForGroups": true,
+    "reservable": true,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": true,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.5,
+    "reviewCount": 206,
+    "featured": false
+  },
+  {
+    "name": "Monsieur Ricard",
+    "slug": "monsieur-ricard-montreal",
+    "status": "unclaimed",
+    "verified": false,
+    "plan": "free",
+    "venueType": "bar",
+    "dataSource": "google_places",
+    "address": "4543 Av. du Parc, Montréal, QC H2V 4E4",
+    "shortAddress": "4543 Av. du Parc, Montréal",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H2V 4E4",
+    "location": {
+      "latitude": 45.5174115,
+      "longitude": -73.5901202
+    },
+    "phone": "+1 514-622-2208",
+    "email": "",
+    "website": "https://instagram.com/monsieur.ricard",
+    "description": "",
+    "sports": [],
+    "amenities": [
+      "group_friendly",
+      "patio",
+      "restroom",
+      "parking",
+      "cocktails"
+    ],
+    "photos": [],
+    "coverPhoto": "",
+    "hours": {
+      "Sunday": {
+        "open": "14:00",
+        "close": "03:00"
+      },
+      "Monday": {
+        "open": "17:00",
+        "close": "03:00"
+      },
+      "Tuesday": {
+        "open": "14:00",
+        "close": "03:00"
+      },
+      "Wednesday": {
+        "open": "14:00",
+        "close": "03:00"
+      },
+      "Thursday": {
+        "open": "14:00",
+        "close": "03:00"
+      },
+      "Friday": {
+        "open": "14:00",
+        "close": "03:00"
+      },
+      "Saturday": {
+        "open": "14:00",
+        "close": "03:00"
+      }
+    },
+    "social": {},
+    "googlePlaceId": "ChIJAWxv5ZQyVUARQgQ8t7yfauc",
+    "googleRating": 4.2,
+    "googleReviewCount": 301,
+    "goodForWatchingSports": true,
+    "priceLevel": "PRICE_LEVEL_MODERATE",
+    "outdoorSeating": true,
+    "goodForGroups": true,
+    "reservable": false,
+    "servesBeer": true,
+    "servesCocktails": true,
+    "takeout": false,
+    "delivery": false,
+    "stripeOnboarded": false,
+    "totalRsvps": 0,
+    "totalEvents": 0,
+    "rating": 4.2,
+    "reviewCount": 301,
+    "featured": false
+  }
+]
