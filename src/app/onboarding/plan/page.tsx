@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
+import { useAuth } from '@/hooks/useAuth'
 import { db } from '@/lib/firebase'
 import { doc, updateDoc } from 'firebase/firestore'
 import Button from '@/components/ui/Button'
@@ -76,15 +77,23 @@ const PLANS = [
 
 export default function PlanPage() {
   const router = useRouter()
+
+  // ── Fix: use userDoc instead of localStorage ─────────
+  const { userDoc } = useAuth()
+
   const [selectedPlan, setSelectedPlan] = useState('free')
   const [loading,      setLoading]      = useState(false)
   const [venueId,      setVenueId]      = useState('')
 
   useEffect(() => {
-    const id = localStorage.getItem('onboarding_venue_id')
-    if (!id) { router.replace('/onboarding/claim'); return }
+    if (!userDoc) return
+    const id = userDoc.venueId ?? (userDoc as any).pendingVenueId
+    if (!id) {
+      router.replace('/onboarding/claim')
+      return
+    }
     setVenueId(id)
-  }, [router])
+  }, [userDoc, router])
 
   async function handleSelectPlan() {
     if (!venueId) return
@@ -94,7 +103,6 @@ export default function PlanPage() {
         plan: selectedPlan,
       })
       if (selectedPlan === 'free') {
-        localStorage.removeItem('onboarding_venue_id')
         router.push('/venue-dashboard')
       } else {
         router.push('/onboarding/stripe')
@@ -145,10 +153,8 @@ export default function PlanPage() {
               </div>
             )}
 
-            {/* Header row — name + price + radio on same line */}
             <div className="flex items-center justify-between mb-1">
               <div className="flex items-center gap-3">
-                {/* Radio indicator */}
                 <div className={clsx(
                   'w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all',
                   selectedPlan === plan.id
@@ -167,7 +173,6 @@ export default function PlanPage() {
                 </div>
               </div>
 
-              {/* Price — right aligned, no overlap */}
               <div className="text-right flex-shrink-0 ml-4">
                 {plan.price === 0 ? (
                   <span className="text-xl font-bold text-brand-charcoal">Free</span>
@@ -182,7 +187,6 @@ export default function PlanPage() {
               </div>
             </div>
 
-            {/* Features list */}
             <div className="space-y-1.5 mt-3 ml-8">
               {plan.features.map(feature => (
                 <div key={feature} className="flex items-center gap-2">

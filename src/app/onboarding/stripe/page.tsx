@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
+import { useAuth } from '@/hooks/useAuth'
 import Button from '@/components/ui/Button'
 import Stepper from '@/components/ui/Stepper'
 import {
@@ -9,7 +10,7 @@ import {
   ShieldCheckIcon,
   BanknotesIcon,
   ArrowRightIcon,
-  ArrowLeftIcon
+  ArrowLeftIcon,
 } from '@heroicons/react/24/outline'
 
 const STEPS = [
@@ -21,21 +22,29 @@ const STEPS = [
 ]
 
 export default function StripePage() {
-  const router  = useRouter()
+  const router = useRouter()
+
+  // ── Fix: use userDoc instead of localStorage ─────────
+  const { userDoc } = useAuth()
+
   const [loading, setLoading] = useState(false)
   const [venueId, setVenueId] = useState('')
 
   useEffect(() => {
-    const id = localStorage.getItem('onboarding_venue_id')
-    if (!id) { router.replace('/onboarding/claim'); return }
+    if (!userDoc) return
+    const id = userDoc.venueId ?? (userDoc as any).pendingVenueId
+    if (!id) {
+      router.replace('/onboarding/claim')
+      return
+    }
     setVenueId(id)
-  }, [router])
+  }, [userDoc, router])
 
   async function handleConnectStripe() {
     if (!venueId) return
     setLoading(true)
     try {
-      const res = await fetch('/api/stripe/connect', {
+      const res  = await fetch('/api/stripe/connect', {
         method:  'POST',
         headers: { 'Content-Type': 'application/json' },
         body:    JSON.stringify({ venueId }),
@@ -52,7 +61,6 @@ export default function StripePage() {
   }
 
   function handleSkip() {
-    localStorage.removeItem('onboarding_venue_id')
     router.push('/venue-dashboard')
   }
 
@@ -63,7 +71,7 @@ export default function StripePage() {
       <button
         onClick={() => router.back()}
         className="flex items-center gap-1.5 text-sm font-semibold text-gray-400 hover:text-brand-charcoal transition-colors mb-6"
-        >
+      >
         <ArrowLeftIcon className="w-4 h-4" />
         Back
       </button>
@@ -76,27 +84,27 @@ export default function StripePage() {
           Connect payments
         </h1>
         <p className="text-gray-400 text-sm max-w-sm mx-auto">
-          Connect your Stripe account to receive ticket payments directly into your bank account
+          Connect your Stripe account to receive ticket payments
+          directly into your bank account
         </p>
       </div>
 
       <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 space-y-6">
 
-        {/* Benefits */}
         <div className="space-y-4">
           {[
             {
-              icon: BanknotesIcon,
+              icon:  BanknotesIcon,
               title: 'Direct payouts',
               desc:  'Ticket revenue goes straight to your bank account within 2-3 business days',
             },
             {
-              icon: ShieldCheckIcon,
+              icon:  ShieldCheckIcon,
               title: 'Secure and trusted',
               desc:  'Stripe powers payments for Airbnb, Shopify and millions of businesses worldwide',
             },
             {
-              icon: CreditCardIcon,
+              icon:  CreditCardIcon,
               title: 'No setup fees',
               desc:  'Free to connect. We only take our commission when you sell a ticket',
             },

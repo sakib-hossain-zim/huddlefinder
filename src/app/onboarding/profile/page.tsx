@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
+import { useAuth } from '@/hooks/useAuth'
 import { db, storage } from '@/lib/firebase'
 import { doc, updateDoc } from 'firebase/firestore'
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'
@@ -61,26 +62,34 @@ const DEFAULT_HOURS = DAYS.reduce((acc, day) => ({
 export default function OnboardingProfilePage() {
   const router = useRouter()
 
-  const [venueId,     setVenueId]     = useState('')
-  const [description, setDescription] = useState('')
-  const [sports,      setSports]      = useState<string[]>([])
-  const [amenities,   setAmenities]   = useState<string[]>([])
-  const [hours,       setHours]       = useState(DEFAULT_HOURS)
-  const [instagram,   setInstagram]   = useState('')
-  const [facebook,    setFacebook]    = useState('')
-  const [website,     setWebsite]     = useState('')
-  const [coverPhoto,  setCoverPhoto]  = useState<File | null>(null)
-  const [coverPreview, setCoverPreview] = useState('')
-  const [photos,      setPhotos]      = useState<File[]>([])
-  const [photoPreviews, setPhotoPreviews] = useState<string[]>([])
-  const [loading,     setLoading]     = useState(false)
-  const [error,       setError]       = useState('')
+  // ── Fix: use userDoc instead of localStorage ─────────
+  const { user, userDoc } = useAuth()
 
+  const [venueId,      setVenueId]      = useState('')
+  const [description,  setDescription]  = useState('')
+  const [sports,       setSports]       = useState<string[]>([])
+  const [amenities,    setAmenities]    = useState<string[]>([])
+  const [hours,        setHours]        = useState(DEFAULT_HOURS)
+  const [instagram,    setInstagram]    = useState('')
+  const [facebook,     setFacebook]     = useState('')
+  const [website,      setWebsite]      = useState('')
+  const [coverPhoto,   setCoverPhoto]   = useState<File | null>(null)
+  const [coverPreview, setCoverPreview] = useState('')
+  const [photos,       setPhotos]       = useState<File[]>([])
+  const [photoPreviews, setPhotoPreviews] = useState<string[]>([])
+  const [loading,      setLoading]      = useState(false)
+  const [error,        setError]        = useState('')
+
+  // ── Fix: read venueId from userDoc not localStorage ──
   useEffect(() => {
-    const id = localStorage.getItem('onboarding_venue_id')
-    if (!id) { router.replace('/onboarding/claim'); return }
+    if (!userDoc) return
+    const id = userDoc.venueId ?? (userDoc as any).pendingVenueId
+    if (!id) {
+      router.replace('/onboarding/claim')
+      return
+    }
     setVenueId(id)
-  }, [router])
+  }, [userDoc, router])
 
   // ── Photo handlers ────────────────────────────────────
   function handleCoverPhoto(e: React.ChangeEvent<HTMLInputElement>) {
@@ -91,9 +100,9 @@ export default function OnboardingProfilePage() {
   }
 
   function handlePhotos(e: React.ChangeEvent<HTMLInputElement>) {
-    const files = Array.from(e.target.files ?? [])
+    const files     = Array.from(e.target.files ?? [])
     const remaining = 9 - photos.length
-    const newFiles = files.slice(0, remaining)
+    const newFiles  = files.slice(0, remaining)
     setPhotos(prev => [...prev, ...newFiles])
     setPhotoPreviews(prev => [
       ...prev,
@@ -106,7 +115,6 @@ export default function OnboardingProfilePage() {
     setPhotoPreviews(prev => prev.filter((_, i) => i !== index))
   }
 
-  // ── Sport toggle ──────────────────────────────────────
   function toggleSport(sport: string) {
     setSports(prev =>
       prev.includes(sport)
@@ -115,7 +123,6 @@ export default function OnboardingProfilePage() {
     )
   }
 
-  // ── Amenity toggle ────────────────────────────────────
   function toggleAmenity(amenity: string) {
     setAmenities(prev =>
       prev.includes(amenity)
@@ -124,7 +131,6 @@ export default function OnboardingProfilePage() {
     )
   }
 
-  // ── Hours ─────────────────────────────────────────────
   function updateHours(day: string, field: 'open' | 'close' | 'closed', value: string | boolean) {
     setHours(prev => ({
       ...prev,
@@ -132,7 +138,6 @@ export default function OnboardingProfilePage() {
     }))
   }
 
-  // ── Upload photos to Firebase Storage ─────────────────
   async function uploadPhotos(venueId: string): Promise<{ cover: string; gallery: string[] }> {
     let coverUrl = ''
     const galleryUrls: string[] = []
@@ -153,7 +158,6 @@ export default function OnboardingProfilePage() {
     return { cover: coverUrl, gallery: galleryUrls }
   }
 
-  // ── Submit ────────────────────────────────────────────
   async function handleSave() {
     if (!venueId) return
     if (sports.length === 0) {
@@ -167,7 +171,6 @@ export default function OnboardingProfilePage() {
     try {
       const { cover, gallery } = await uploadPhotos(venueId)
 
-      // Format hours for Firestore
       const formattedHours = Object.entries(hours).reduce((acc, [day, val]) => {
         if (!val.closed) {
           acc[day] = { open: val.open, close: val.close }
@@ -210,7 +213,7 @@ export default function OnboardingProfilePage() {
         <ArrowLeftIcon className="w-4 h-4" />
         Back
       </button>
-      
+
       <div className="text-center mb-8">
         <div className="w-14 h-14 bg-brand-red-light rounded-2xl flex items-center justify-center mx-auto mb-4">
           <SparklesIcon className="w-7 h-7 text-brand-red" />
@@ -237,15 +240,10 @@ export default function OnboardingProfilePage() {
             <PhotoIcon className="w-5 h-5 text-brand-red" />
             Cover photo
           </h2>
-
           <label className="block cursor-pointer">
             {coverPreview ? (
               <div className="relative h-48 rounded-xl overflow-hidden">
-                <img
-                  src={coverPreview}
-                  alt="Cover"
-                  className="w-full h-full object-cover"
-                />
+                <img src={coverPreview} alt="Cover" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
                   <p className="text-white text-sm font-semibold">Change photo</p>
                 </div>
@@ -257,12 +255,7 @@ export default function OnboardingProfilePage() {
                 <p className="text-xs text-gray-300">JPG or PNG, max 5MB</p>
               </div>
             )}
-            <input
-              type="file"
-              accept="image/*"
-              onChange={handleCoverPhoto}
-              className="hidden"
-            />
+            <input type="file" accept="image/*" onChange={handleCoverPhoto} className="hidden" />
           </label>
         </div>
 
@@ -276,7 +269,6 @@ export default function OnboardingProfilePage() {
           <p className="text-xs text-gray-400 mb-4">
             Show fans what your venue looks like on match day
           </p>
-
           <div className="grid grid-cols-3 gap-2">
             {photoPreviews.map((preview, index) => (
               <div key={index} className="relative aspect-square rounded-xl overflow-hidden">
@@ -289,18 +281,11 @@ export default function OnboardingProfilePage() {
                 </button>
               </div>
             ))}
-
             {photos.length < 9 && (
               <label className="aspect-square rounded-xl border-2 border-dashed border-gray-200 flex flex-col items-center justify-center cursor-pointer hover:border-brand-red hover:bg-brand-red-light transition-all">
                 <PlusIcon className="w-6 h-6 text-gray-300" />
                 <span className="text-xs text-gray-300 mt-1">Add</span>
-                <input
-                  type="file"
-                  accept="image/*"
-                  multiple
-                  onChange={handlePhotos}
-                  className="hidden"
-                />
+                <input type="file" accept="image/*" multiple onChange={handlePhotos} className="hidden" />
               </label>
             )}
           </div>
@@ -414,7 +399,6 @@ export default function OnboardingProfilePage() {
                 <span className="text-sm font-semibold text-brand-charcoal w-24 flex-shrink-0">
                   {day.slice(0, 3)}
                 </span>
-
                 {hours[day]?.closed ? (
                   <span className="text-sm text-gray-400 flex-1">Closed</span>
                 ) : (
@@ -434,7 +418,6 @@ export default function OnboardingProfilePage() {
                     />
                   </div>
                 )}
-
                 <button
                   onClick={() => updateHours(day, 'closed', !hours[day]?.closed)}
                   className={clsx(
@@ -482,13 +465,7 @@ export default function OnboardingProfilePage() {
           </div>
         </div>
 
-        {/* ── Save button ── */}
-        <Button
-          fullWidth
-          size="lg"
-          loading={loading}
-          onClick={handleSave}
-        >
+        <Button fullWidth size="lg" loading={loading} onClick={handleSave}>
           {loading ? 'Saving profile...' : 'Save and continue'}
         </Button>
 

@@ -302,7 +302,7 @@ export default function VerifyPage() {
           Verify ownership
         </h1>
         <p className="text-gray-400 text-sm">
-          We'll send a code to the phone number registered to this venue
+          We'll send a code to the phone number to venue's google registered phone number. This is usually the number that is provided on Google Maps
         </p>
       </div>
 
@@ -320,7 +320,7 @@ export default function VerifyPage() {
               <div>
                 <p className="text-sm font-semibold text-brand-charcoal">SMS verification</p>
                 <p className="text-xs text-gray-400">
-                  A 6-digit code will be sent to your venue's registered phone number
+                  A 6-digit code will be sent to your venue's google registered phone number. This is usually the number that is provided on Google Maps
                 </p>
               </div>
             </div>

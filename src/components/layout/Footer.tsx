@@ -53,7 +53,7 @@ export default function Footer() {
             {/* Cities */}
             <div>
               <p className="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">
-                Cities
+                Popular Cities
               </p>
               <ul className="space-y-3">
                 {['Vancouver', 'Toronto', 'Calgary', 'Montreal'].map(city => (
@@ -118,7 +118,7 @@ export default function Footer() {
           />
           <p className="text-white/50 text-xs leading-relaxed">
             Canada's live sports finder.
-            Find your venue. Show up. Join the chant.
+            Find your venue. Show up. Join the huddle.
           </p>
         </div>
 
@@ -153,7 +153,7 @@ export default function Footer() {
         {/* Cities row */}
         <div className="flex items-center gap-3 mb-6 flex-wrap">
           <p className="text-[10px] font-bold text-white/30 uppercase tracking-widest">
-            Cities:
+            Popular Cities:
           </p>
           {['Vancouver', 'Toronto', 'Calgary', 'Montreal'].map((city, i, arr) => (
             <span key={city} className="flex items-center gap-3">

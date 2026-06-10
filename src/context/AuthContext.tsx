@@ -24,8 +24,8 @@ interface AuthContextType {
   role:                  'fan' | 'venue_owner' | 'admin' | null
   signIn:                (email: string, password: string) => Promise<void>
   signUp:                (email: string, password: string, firstName: string, lastName: string, role: 'fan' | 'venue_owner') => Promise<void>
-  signInWithGoogle:      () => Promise<UserDoc | null>
-  signInWithFacebook:    () => Promise<UserDoc | null>
+  signInWithGoogle:      (role?: 'fan' | 'venue_owner') => Promise<UserDoc | null>
+  signInWithFacebook:    (role?: 'fan' | 'venue_owner') => Promise<UserDoc | null>
   logOut:                () => Promise<void>
   resetPassword:         (email: string) => Promise<void>
   refreshUserDoc:        () => Promise<void>
@@ -74,13 +74,11 @@ async function createUserDoc(user: User, extraData: Partial<UserDoc> = {}) {
 }
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
-  // ── Read auth state synchronously on mount ───────────
   const [user,    setUser]    = useState<User | null>(auth.currentUser)
   const [userDoc, setUserDoc] = useState<UserDoc | null>(null)
   const [loading, setLoading] = useState(!auth.currentUser)
 
   useEffect(() => {
-    // ── Pre-fetch userDoc immediately if already logged in ──
     if (auth.currentUser) {
       getDoc(doc(db, 'users', auth.currentUser.uid)).then(snap => {
         if (snap.exists()) setUserDoc(snap.data() as UserDoc)
@@ -139,12 +137,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     await sendEmailVerification(user)
   }
 
-  // ── Returns userDoc so callers can route correctly ───
-  const signInWithGoogle = async (): Promise<UserDoc | null> => {
+  // ── Accepts role so signup page can create correct account ──
+  const signInWithGoogle = async (role: 'fan' | 'venue_owner' = 'fan'): Promise<UserDoc | null> => {
     const provider = new GoogleAuthProvider()
     const { user } = await signInWithPopup(auth, provider)
-    await createUserDoc(user, { authProviders: ['google'] })
-    // Fetch and set userDoc immediately so callers have the role
+    await createUserDoc(user, { authProviders: ['google'], role })
     const snap = await getDoc(doc(db, 'users', user.uid))
     if (snap.exists()) {
       const data = snap.data() as UserDoc
@@ -154,11 +151,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return null
   }
 
-  // ── Returns userDoc so callers can route correctly ───
-  const signInWithFacebook = async (): Promise<UserDoc | null> => {
+  const signInWithFacebook = async (role: 'fan' | 'venue_owner' = 'fan'): Promise<UserDoc | null> => {
     const provider = new FacebookAuthProvider()
     const { user } = await signInWithPopup(auth, provider)
-    await createUserDoc(user, { authProviders: ['facebook'] })
+    await createUserDoc(user, { authProviders: ['facebook'], role })
     const snap = await getDoc(doc(db, 'users', user.uid))
     if (snap.exists()) {
       const data = snap.data() as UserDoc

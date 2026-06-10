@@ -25,7 +25,7 @@ if (!admin.apps.length) {
 const db = admin.firestore()
 
 async function main() {
-  const filePath = path.join(process.cwd(), 'scripts', 'venues-to-import.json')
+  const filePath = path.join(process.cwd(), 'scripts', 'test-venues.json')
 
   if (!fs.existsSync(filePath)) {
     console.error('❌ venues-to-import.json not found. Run npm run import:venues first.')

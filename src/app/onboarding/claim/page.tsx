@@ -439,6 +439,15 @@ export default function ClaimPage() {
             <p className="text-gray-400 text-sm">
               Search to see if your venue is already on Huddlefinder
             </p>
+            {/* ── Search first nudge ── */}
+            <div className="mt-4 inline-flex items-start gap-2 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 max-w-sm mx-auto">
+              <span className="text-amber-500 text-lg flex-shrink-0">⚠️</span>
+              <p className="text-xs text-amber-700 text-left leading-relaxed">
+                <span className="font-bold">Always search first.</span>{' '}
+                Many Canadian venues are already on HuddleFinder and ready to claim.
+                Please check if your venue already exists.
+              </p>
+            </div>
           </div>
 
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">

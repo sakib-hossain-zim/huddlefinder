@@ -334,7 +334,7 @@ function VenueDashboardContent() {
               </p>
             </div>
             <button
-              onClick={() => router.push('/onboarding/profile')}
+              onClick={() => router.push('/venue-dashboard/settings')}
               className="text-xs font-bold text-blue-700 flex-shrink-0"
             >
               Complete →

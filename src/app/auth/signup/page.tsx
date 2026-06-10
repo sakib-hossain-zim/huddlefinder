@@ -63,6 +63,9 @@ function SignupPageInner() {
     try {
       await signUp(email.trim(), password, firstName.trim(), lastName.trim(), role)
       if (role === 'venue_owner') {
+        // ── Email verification sent but don't block onboarding ──
+        // Venue owners verify identity via SMS during onboarding
+        toast.success('Account created! Check your email to verify your address.')
         router.push('/onboarding/claim')
       } else {
         router.push('/auth/verify-email')
@@ -87,8 +90,8 @@ function SignupPageInner() {
     setGoogleLoading(true)
     setError('')
     try {
-      // ── Returns actual userDoc so routing is correct ──
-      const userData = await signInWithGoogle()
+      // ── Pass selected role so venue owners get correct role ──
+      const userData = await signInWithGoogle(role)
       if (userData?.role === 'venue_owner') {
         router.push(userData.venueId ? '/venue-dashboard' : '/onboarding/claim')
       } else {
@@ -157,7 +160,7 @@ function SignupPageInner() {
       <div className="px-4 pt-8 pb-28 md:min-h-screen md:flex md:items-center md:justify-center md:py-12">
         <div className="w-full max-w-md">
 
-          {/* Logo / title */}
+          {/* Logo */}
           <div className="text-center mb-6">
             <span className="text-3xl font-black text-brand-red tracking-tight">
               Huddlefinder
@@ -165,7 +168,7 @@ function SignupPageInner() {
             <p className="text-sm text-gray-400 mt-1">Create your account</p>
           </div>
 
-          {/* Role selector or forced role banner */}
+          {/* Role selector */}
           {showRoleSelector ? (
             <div className="grid grid-cols-2 gap-2 mb-6">
               <button
@@ -251,7 +254,7 @@ function SignupPageInner() {
               </div>
             )}
 
-            {/* Form fields */}
+            {/* Fields */}
             <div className="space-y-4">
               <div className="grid grid-cols-2 gap-3">
                 <Input
@@ -307,6 +310,15 @@ function SignupPageInner() {
                   <p className="text-xs text-blue-600 leading-relaxed">
                     📧 We'll send a verification link to your email after sign up.
                     You'll need to verify before RSVPing to events.
+                  </p>
+                </div>
+              )}
+
+              {role === 'venue_owner' && (
+                <div className="p-3 bg-blue-50 border border-blue-100 rounded-xl">
+                  <p className="text-xs text-blue-600 leading-relaxed">
+                    📧 We'll send a verification link to your email.
+                    You can complete venue setup first and verify later.
                   </p>
                 </div>
               )}

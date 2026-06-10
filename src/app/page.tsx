@@ -241,7 +241,7 @@ export default function HomePage() {
       <div className="max-w-7xl mx-auto px-4 pt-5 md:pt-8">
 
         {/* Popular cities label — mobile only */}
-        <div className="flex items-center justify-between mb-2 md:hidden">
+        <div className="flex items-center justify-between mb-2">
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
             Popular cities
           </p>
