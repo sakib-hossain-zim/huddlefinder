@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { collection, getDocs } from 'firebase/firestore'
+import { collection, getDocs, query, where } from 'firebase/firestore'
 import { db } from '@/lib/firebase'
 import { useAuth } from '@/hooks/useAuth'
 import { Venue } from '@/types/venue'
@@ -33,7 +33,7 @@ const structuredData = {
   '@type':      'WebSite',
   name:         'HuddleFinder',
   url:          'https://www.huddlefinder.ca',
-  description:  'Find the best sports bars and watch parties in Canada. World Cup, NHL, NBA, NFL and more.',
+  description:  'Find the best sports bars and watch parties in Canada. FIFA World Cup 2026, NHL, NBA, NFL and more.',
   potentialAction: {
     '@type':       'SearchAction',
     target:        'https://www.huddlefinder.ca/search?q={search_term_string}',
@@ -56,19 +56,37 @@ function getDistanceKm(
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
 }
 
+// ── Skeleton card for loading state ───────────────────
+function VenueCardSkeleton() {
+  return (
+    <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden animate-pulse">
+      <div className="h-36 md:h-44 bg-gray-200" />
+      <div className="p-3 space-y-2">
+        <div className="h-4 bg-gray-200 rounded w-3/4" />
+        <div className="h-3 bg-gray-100 rounded w-1/2" />
+        <div className="h-3 bg-gray-100 rounded w-2/3" />
+        <div className="flex gap-1 pt-1">
+          <div className="h-5 bg-gray-100 rounded-full w-12" />
+          <div className="h-5 bg-gray-100 rounded-full w-12" />
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export default function HomePage() {
   const router                         = useRouter()
   const { user, loading: authLoading } = useAuth()
 
-  const [venues,        setVenues]       = useState<Venue[]>([])
-  const [events,        setEvents]       = useState<VenueEvent[]>([])
-  const [loadingData,   setLoadingData]  = useState(true)
-  const [selectedCity,  setSelectedCity] = useState('Vancouver')
-  const [nearMe,        setNearMe]       = useState(false)
-  const [locating,      setLocating]     = useState(false)
-  const [userLocation,  setUserLocation] = useState<{ lat: number; lng: number } | null>(null)
+  const [venues,        setVenues]        = useState<Venue[]>([])
+  const [events,        setEvents]        = useState<VenueEvent[]>([])
+  const [loadingData,   setLoadingData]   = useState(true)
+  const [selectedCity,  setSelectedCity]  = useState('Vancouver')
+  const [nearMe,        setNearMe]        = useState(false)
+  const [locating,      setLocating]      = useState(false)
+  const [userLocation,  setUserLocation]  = useState<{ lat: number; lng: number } | null>(null)
   const [locationError, setLocationError] = useState('')
-  const [error,         setError]        = useState('')
+  const [error,         setError]         = useState('')
 
   useEffect(() => {
     if (nearMe && userLocation) {
@@ -82,10 +100,17 @@ export default function HomePage() {
     setLoadingData(true)
     setError('')
     try {
-      const snap    = await getDocs(collection(db, 'venues'))
-      const results = snap.docs
-        .map(d => ({ venueId: d.id, ...d.data() } as Venue))
-        .filter(v => v.city === selectedCity)
+      // ── Only fetch venues for selected city ──────────
+      // Previously fetched ALL venues and filtered client-side
+      // Now Firestore filters server-side → much faster
+      const snap = await getDocs(query(
+        collection(db, 'venues'),
+        where('city', '==', selectedCity)
+      ))
+
+      const results = snap.docs.map(d => ({
+        venueId: d.id, ...d.data()
+      } as Venue))
 
       results.sort((a, b) => {
         const planScore = (v: Venue): number => {
@@ -191,7 +216,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
-      {/* ── DESKTOP hero — unchanged ── */}
+      {/* ── DESKTOP hero ── */}
       <div className="hidden md:block bg-brand-red px-6 py-24 text-center">
         <p className="text-white/80 text-xs font-bold uppercase tracking-widest mb-3">
           {STRINGS.descriptor}
@@ -339,7 +364,7 @@ export default function HomePage() {
         <div className="flex items-center justify-between mb-3 md:mb-4">
           <h2 className="text-base md:text-lg font-bold text-brand-charcoal">
             {loadingData
-              ? 'Loading venues...'
+              ? 'Finding venues...'
               : nearMe
                 ? `Venues near you (${venues.length})`
                 : `Venues in ${selectedCity} (${venues.length})`
@@ -354,8 +379,13 @@ export default function HomePage() {
           </button>
         </div>
 
+        {/* ── Skeleton loaders while fetching ── */}
         {loadingData ? (
-          <LoadingSpinner />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-4">
+            {[1,2,3,4,5,6,7,8].map(i => (
+              <VenueCardSkeleton key={i} />
+            ))}
+          </div>
         ) : venues.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-4">
             {venues.map(venue => (

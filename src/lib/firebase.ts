@@ -1,6 +1,11 @@
 import { initializeApp, getApps, getApp } from 'firebase/app'
 import { getAuth } from 'firebase/auth'
-import { getFirestore } from 'firebase/firestore'
+import {
+  initializeFirestore,
+  persistentLocalCache,
+  persistentMultipleTabManager,
+  getFirestore,
+} from 'firebase/firestore'
 import { getStorage } from 'firebase/storage'
 
 const firebaseConfig = {
@@ -16,7 +21,28 @@ const firebaseConfig = {
 const app = getApps().length ? getApp() : initializeApp(firebaseConfig)
 
 export const auth    = getAuth(app)
-export const db      = getFirestore(app)
 export const storage = getStorage(app)
 
-console.log('Firebase API Key loaded:', process.env.NEXT_PUBLIC_FIREBASE_API_KEY?.slice(0, 10))
+// ── Firestore with persistent cache ───────────────────
+// Browser only — falls back gracefully on:
+//   Server-side rendering (Next.js)
+//   Instagram in-app browser (limited IndexedDB)
+//   Hot reloads in development (already initialized)
+function initDb() {
+  if (typeof window === 'undefined') {
+    // Server-side — no persistence needed
+    return getFirestore(app)
+  }
+  try {
+    return initializeFirestore(app, {
+      localCache: persistentLocalCache({
+        tabManager: persistentMultipleTabManager()
+      })
+    })
+  } catch {
+    // Already initialized (hot reload) or not supported (Instagram IAB)
+    return getFirestore(app)
+  }
+}
+
+export const db = initDb()
