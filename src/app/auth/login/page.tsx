@@ -20,7 +20,7 @@ import {
 function LoginPageInner() {
   const router       = useRouter()
   const searchParams = useSearchParams()
-  const { signIn, signInWithGoogle, signInWithFacebook, userDoc } = useAuth()
+  const { signIn, signInWithGoogle, userDoc } = useAuth()
   const { toasts, toast, closeToast } = useToast()
 
   const idleReason = searchParams.get('reason') === 'idle'
@@ -33,7 +33,7 @@ function LoginPageInner() {
   const [socialLoading, setSocialLoading] = useState<'google' | 'facebook' | null>(null)
   const [error,         setError]         = useState('')
 
-  function redirectAfterLogin(role?: string) {
+  function redirectAfterLogin(role?: string | null) {
     if (redirect) {
       router.push(redirect)
     } else if (role === 'venue_owner') {
@@ -64,23 +64,11 @@ function LoginPageInner() {
     setSocialLoading('google')
     setError('')
     try {
-      await signInWithGoogle()
-      redirectAfterLogin(userDoc?.role)
-    } catch (err: any) {
-      const msg = getFirebaseError(err.code)
-      setError(msg)
-      toast.error(msg)
-    } finally {
-      setSocialLoading(null)
-    }
-  }
-
-  async function handleFacebook() {
-    setSocialLoading('facebook')
-    setError('')
-    try {
-      await signInWithFacebook()
-      redirectAfterLogin(userDoc?.role)
+      // ── Returns actual userDoc so routing is correct ──
+      // Previously used stale userDoc state which was null
+      // causing all Google sign-ins to land on /dashboard
+      const userData = await signInWithGoogle()
+      redirectAfterLogin(userData?.role)
     } catch (err: any) {
       const msg = getFirebaseError(err.code)
       setError(msg)
@@ -96,14 +84,14 @@ function LoginPageInner() {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="px-6 pt-16 pb-12 max-w-md mx-auto w-full">
+      <div className="px-6 pt-8 pb-28 md:pt-16 md:pb-12 max-w-md mx-auto w-full">
 
         {/* Logo */}
-        <Link href="/">
+        <Link href="/" className="block text-center mb-6">
           <img
             src="/logo.svg"
             alt={STRINGS.appName}
-            className="h-24 w-auto mx-auto mb-6"
+            className="h-16 md:h-24 w-auto mx-auto"
           />
         </Link>
 
@@ -112,9 +100,7 @@ function LoginPageInner() {
           <div className="mb-5 p-4 bg-amber-50 border border-amber-200 rounded-2xl flex items-start gap-3">
             <ClockIcon className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" />
             <div>
-              <p className="text-sm font-semibold text-amber-800">
-                You were logged out
-              </p>
+              <p className="text-sm font-semibold text-amber-800">You were logged out</p>
               <p className="text-xs text-amber-600 mt-0.5">
                 For your security we log you out after 30 minutes of inactivity
               </p>
@@ -123,11 +109,9 @@ function LoginPageInner() {
         )}
 
         {/* Header */}
-        <div className="mb-8">
+        <div className="mb-6">
           <h1 className="text-2xl font-bold text-brand-charcoal">Welcome back</h1>
-          <p className="text-gray-400 text-sm mt-1">
-            Sign in to find where the game is on
-          </p>
+          <p className="text-gray-400 text-sm mt-1">Sign in to find where the game is on</p>
         </div>
 
         {/* Social login */}
@@ -149,21 +133,6 @@ function LoginPageInner() {
             )}
             Continue with Google
           </button>
-
-          {/* <button
-            onClick={handleFacebook}
-            disabled={!!socialLoading || loading}
-            className="w-full flex items-center justify-center gap-3 border border-gray-200 rounded-xl py-3 px-4 text-sm font-semibold text-brand-charcoal hover:bg-gray-50 transition-colors disabled:opacity-50 min-h-[48px]"
-          >
-            {socialLoading === 'facebook' ? (
-              <div className="w-4 h-4 border-2 border-brand-red border-t-transparent rounded-full animate-spin" />
-            ) : (
-              <svg className="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24" fill="#1877F2">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-              </svg>
-            )}
-            Continue with Facebook
-          </button> */}
         </div>
 
         {/* Divider */}
@@ -192,7 +161,6 @@ function LoginPageInner() {
             leftIcon={<EnvelopeIcon className="w-4 h-4" />}
             autoComplete="email"
           />
-
           <div>
             <Input
               label="Password"
@@ -209,7 +177,7 @@ function LoginPageInner() {
                   className="text-gray-400 hover:text-gray-600"
                 >
                   {showPassword
-                    ? <EyeSlashIcon className="w-4 h-4" />
+                    ? <EyeIcon className="w-4 h-4" />
                     : <EyeIcon className="w-4 h-4" />
                   }
                 </button>
@@ -237,7 +205,7 @@ function LoginPageInner() {
           {STRINGS.signIn}
         </Button>
 
-        <p className="text-center text-sm text-gray-400 mt-6">
+        <p className="text-center text-sm text-gray-400 mt-6 mb-4">
           Don't have an account?{' '}
           <Link href="/auth/signup" className="text-brand-red font-semibold">
             Sign up

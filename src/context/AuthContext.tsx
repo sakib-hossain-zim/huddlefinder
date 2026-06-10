@@ -24,8 +24,8 @@ interface AuthContextType {
   role:                  'fan' | 'venue_owner' | 'admin' | null
   signIn:                (email: string, password: string) => Promise<void>
   signUp:                (email: string, password: string, firstName: string, lastName: string, role: 'fan' | 'venue_owner') => Promise<void>
-  signInWithGoogle:      () => Promise<void>
-  signInWithFacebook:    () => Promise<void>
+  signInWithGoogle:      () => Promise<UserDoc | null>
+  signInWithFacebook:    () => Promise<UserDoc | null>
   logOut:                () => Promise<void>
   resetPassword:         (email: string) => Promise<void>
   refreshUserDoc:        () => Promise<void>
@@ -39,8 +39,8 @@ const AuthContext = createContext<AuthContextType>({
   role:                  null,
   signIn:                async () => {},
   signUp:                async () => {},
-  signInWithGoogle:      async () => {},
-  signInWithFacebook:    async () => {},
+  signInWithGoogle:      async () => null,
+  signInWithFacebook:    async () => null,
   logOut:                async () => {},
   resetPassword:         async () => {},
   refreshUserDoc:        async () => {},
@@ -75,16 +75,12 @@ async function createUserDoc(user: User, extraData: Partial<UserDoc> = {}) {
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   // ── Read auth state synchronously on mount ───────────
-  // auth.currentUser is available immediately from localStorage
-  // No need to wait for onAuthStateChanged for initial render
   const [user,    setUser]    = useState<User | null>(auth.currentUser)
   const [userDoc, setUserDoc] = useState<UserDoc | null>(null)
   const [loading, setLoading] = useState(!auth.currentUser)
 
   useEffect(() => {
     // ── Pre-fetch userDoc immediately if already logged in ──
-    // Runs in parallel with onAuthStateChanged
-    // Eliminates the 300-500ms wait for already-authed users
     if (auth.currentUser) {
       getDoc(doc(db, 'users', auth.currentUser.uid)).then(snap => {
         if (snap.exists()) setUserDoc(snap.data() as UserDoc)
@@ -93,11 +89,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
       setUser(firebaseUser)
-
-      // ── Set loading false as soon as auth state is known ──
-      // Don't block on userDoc Firestore fetch
       setLoading(false)
-
       if (firebaseUser) {
         const snap = await getDoc(doc(db, 'users', firebaseUser.uid))
         setUserDoc(snap.exists() ? (snap.data() as UserDoc) : null)
@@ -147,16 +139,33 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     await sendEmailVerification(user)
   }
 
-  const signInWithGoogle = async () => {
+  // ── Returns userDoc so callers can route correctly ───
+  const signInWithGoogle = async (): Promise<UserDoc | null> => {
     const provider = new GoogleAuthProvider()
     const { user } = await signInWithPopup(auth, provider)
     await createUserDoc(user, { authProviders: ['google'] })
+    // Fetch and set userDoc immediately so callers have the role
+    const snap = await getDoc(doc(db, 'users', user.uid))
+    if (snap.exists()) {
+      const data = snap.data() as UserDoc
+      setUserDoc(data)
+      return data
+    }
+    return null
   }
 
-  const signInWithFacebook = async () => {
+  // ── Returns userDoc so callers can route correctly ───
+  const signInWithFacebook = async (): Promise<UserDoc | null> => {
     const provider = new FacebookAuthProvider()
     const { user } = await signInWithPopup(auth, provider)
     await createUserDoc(user, { authProviders: ['facebook'] })
+    const snap = await getDoc(doc(db, 'users', user.uid))
+    if (snap.exists()) {
+      const data = snap.data() as UserDoc
+      setUserDoc(data)
+      return data
+    }
+    return null
   }
 
   const logOut = async () => {
