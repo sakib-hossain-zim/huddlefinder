@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import {
@@ -28,6 +28,7 @@ import {
   ExclamationTriangleIcon,
   UserGroupIcon,
   QrCodeIcon,
+  ArrowPathIcon,
 } from '@heroicons/react/24/outline'
 import { clsx } from 'clsx'
 
@@ -54,7 +55,6 @@ function toDate(value: any): Date {
   return new Date(value)
 }
 
-// Unified entry — either an RSVP or a ticket
 interface EventEntry {
   key:       string
   eventId:   string
@@ -88,24 +88,36 @@ export default function FanDashboardPage() {
   const [entries,    setEntries]    = useState<EventEntry[]>([])
   const [tickets,    setTickets]    = useState<TicketDoc[]>([])
   const [loading,    setLoading]    = useState(true)
+  const [refreshing, setRefreshing] = useState(false)
   const [cancelling, setCancelling] = useState<string | null>(null)
   const [tab,        setTab]        = useState<'upcoming' | 'past' | 'tickets'>('upcoming')
+
+  const fetchAllData = useCallback(async (isRefresh = false) => {
+    if (!user) return
+    if (isRefresh) {
+      setRefreshing(true)
+    } else {
+      setLoading(true)
+    }
+    try {
+      // ── Force token refresh after Stripe redirect ────────
+      // Stripe does a full page redirect which can leave
+      // Firebase auth token stale → Firestore queries hang
+      await user.getIdToken(true)
+
+      const ticketDocs = await fetchTickets()
+      await fetchRsvps(new Set(ticketDocs.map(t => t.eventId)))
+    } catch (err) {
+      console.error('fetchAllData error:', err)
+    } finally {
+      setLoading(false)
+      setRefreshing(false)
+    }
+  }, [user])
 
   useEffect(() => {
     if (user) fetchAllData()
   }, [user])
-
-  async function fetchAllData() {
-    if (!user) return
-    setLoading(true)
-    try {
-      // Fetch tickets first so we know which eventIds are covered
-      const ticketDocs = await fetchTickets()
-      await fetchRsvps(new Set(ticketDocs.map(t => t.eventId)))
-    } finally {
-      setLoading(false)
-    }
-  }
 
   async function fetchTickets(): Promise<TicketDoc[]> {
     if (!user) return []
@@ -123,34 +135,45 @@ export default function FanDashboardPage() {
 
       setTickets(ticketDocs)
 
-      // Build ticket entries — deduplicated by eventId
-      // If fan bought 2 separate tickets for same event, show event once
-      const seen          = new Set<string>()
+      // ── Fetch all events in parallel ─────────────────────
+      // Previously sequential — each ticket waited for previous
+      // Now all fire at once → much faster
+      const uniqueEventIds = [...new Set(ticketDocs.map(t => t.eventId))]
+
+      if (uniqueEventIds.length === 0) return ticketDocs
+
+      const eventSnaps = await Promise.all(
+        uniqueEventIds.map(id => getDoc(doc(db, 'events', id)))
+      )
+
+      const eventMap = new Map<string, VenueEvent>()
+      eventSnaps.forEach(snap => {
+        if (snap.exists()) {
+          eventMap.set(snap.id, { eventId: snap.id, ...snap.data() } as VenueEvent)
+        }
+      })
+
+      // Build entries — one per unique eventId
+      const seenEventIds  = new Set<string>()
       const ticketEntries: EventEntry[] = []
 
       for (const ticket of ticketDocs) {
-        if (seen.has(ticket.eventId)) continue
-        seen.add(ticket.eventId)
-
-        try {
-          const eventSnap = await getDoc(doc(db, 'events', ticket.eventId))
-          if (!eventSnap.exists()) continue
-          ticketEntries.push({
-            key:       `ticket-${ticket.ticketId}`,
-            eventId:   ticket.eventId,
-            event:     { eventId: eventSnap.id, ...eventSnap.data() } as VenueEvent,
-            type:      'ticket',
-            ticketId:  ticket.ticketId,
-            quantity:  ticket.quantity,
-            checkedIn: ticket.checkedIn,
-          })
-        } catch {
-          continue
-        }
+        if (seenEventIds.has(ticket.eventId)) continue
+        const event = eventMap.get(ticket.eventId)
+        if (!event) continue
+        seenEventIds.add(ticket.eventId)
+        ticketEntries.push({
+          key:       `ticket-${ticket.ticketId}`,
+          eventId:   ticket.eventId,
+          event,
+          type:      'ticket',
+          ticketId:  ticket.ticketId,
+          quantity:  ticket.quantity,
+          checkedIn: ticket.checkedIn,
+        })
       }
 
       setEntries(prev => {
-        // Keep existing RSVP entries not covered by tickets
         const ticketEventIds = new Set(ticketEntries.map(e => e.eventId))
         const rsvpEntries    = prev.filter(
           e => e.type === 'rsvp' && !ticketEventIds.has(e.eventId)
@@ -174,31 +197,44 @@ export default function FanDashboardPage() {
         orderBy('createdAt', 'desc')
       ))
 
-      const seen        = new Set<string>()
+      const uniqueEventIds = [...new Set(
+        snap.docs
+          .map(d => d.data().eventId as string)
+          .filter(id => !ticketEventIds.has(id))
+      )]
+
+      if (uniqueEventIds.length === 0) return
+
+      // ── Fetch all RSVP events in parallel ─────────────────
+      const [eventSnaps, rsvpDocs] = await Promise.all([
+        Promise.all(uniqueEventIds.map(id => getDoc(doc(db, 'events', id)))),
+        Promise.resolve(snap.docs)
+      ])
+
+      const eventMap = new Map<string, VenueEvent>()
+      eventSnaps.forEach(snap => {
+        if (snap.exists()) {
+          eventMap.set(snap.id, { eventId: snap.id, ...snap.data() } as VenueEvent)
+        }
+      })
+
+      const seenEventIds = new Set<string>()
       const rsvpEntries: EventEntry[] = []
 
-      for (const d of snap.docs) {
+      for (const d of rsvpDocs) {
         const eventId = d.data().eventId
-
-        // Skip if already covered by a ticket
         if (ticketEventIds.has(eventId)) continue
-        // Skip duplicates
-        if (seen.has(eventId)) continue
-        seen.add(eventId)
-
-        try {
-          const eventSnap = await getDoc(doc(db, 'events', eventId))
-          if (!eventSnap.exists()) continue
-          rsvpEntries.push({
-            key:    `rsvp-${d.id}`,
-            eventId,
-            event:  { eventId: eventSnap.id, ...eventSnap.data() } as VenueEvent,
-            type:   'rsvp',
-            rsvpId: d.id,
-          })
-        } catch {
-          continue
-        }
+        if (seenEventIds.has(eventId)) continue
+        const event = eventMap.get(eventId)
+        if (!event) continue
+        seenEventIds.add(eventId)
+        rsvpEntries.push({
+          key:    `rsvp-${d.id}`,
+          eventId,
+          event,
+          type:   'rsvp',
+          rsvpId: d.id,
+        })
       }
 
       setEntries(prev => {
@@ -285,13 +321,23 @@ export default function FanDashboardPage() {
               Your upcoming events and tickets
             </p>
           </div>
-          <Link
-            href="/dashboard/profile"
-            className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-xl text-sm font-semibold text-brand-charcoal hover:border-brand-red hover:text-brand-red transition-colors shadow-sm"
-          >
-            <UserCircleIcon className="w-4 h-4" />
-            Profile
-          </Link>
+          <div className="flex items-center gap-2">
+            {/* ── Refresh button ── */}
+            <button
+              onClick={() => fetchAllData(true)}
+              disabled={refreshing}
+              className="flex items-center gap-1.5 px-3 py-2 bg-white border border-gray-200 rounded-xl text-sm font-semibold text-gray-500 hover:border-brand-red hover:text-brand-red transition-colors shadow-sm disabled:opacity-50"
+            >
+              <ArrowPathIcon className={clsx('w-4 h-4', refreshing && 'animate-spin')} />
+            </button>
+            <Link
+              href="/dashboard/profile"
+              className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-xl text-sm font-semibold text-brand-charcoal hover:border-brand-red hover:text-brand-red transition-colors shadow-sm"
+            >
+              <UserCircleIcon className="w-4 h-4" />
+              Profile
+            </Link>
+          </div>
         </div>
 
         {/* Stats */}
@@ -387,7 +433,6 @@ export default function FanDashboardPage() {
                         <span className="text-4xl">{getSportEmoji(event.sport)}</span>
                       )}
 
-                      {/* Past overlay */}
                       {isPast && (
                         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
                           <span className="text-white text-xs font-bold bg-black/50 px-3 py-1 rounded-full">
@@ -396,7 +441,6 @@ export default function FanDashboardPage() {
                         </div>
                       )}
 
-                      {/* Live badge */}
                       {event.status === 'live' && (
                         <div className="absolute top-2 left-2 flex items-center gap-1.5 bg-brand-red text-white text-xs font-bold px-2.5 py-1 rounded-full">
                           <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
@@ -404,7 +448,6 @@ export default function FanDashboardPage() {
                         </div>
                       )}
 
-                      {/* Entry type badge */}
                       <div className={clsx(
                         'absolute top-2 right-2 flex items-center gap-1 text-white text-xs font-bold px-2.5 py-1 rounded-full',
                         entry.type === 'ticket' ? 'bg-green-500' : 'bg-blue-500'
@@ -455,7 +498,6 @@ export default function FanDashboardPage() {
                           </div>
                         )}
 
-                        {/* Group ticket indicator */}
                         {entry.type === 'ticket' && entry.quantity && entry.quantity > 1 && (
                           <div className="flex items-center gap-2 text-xs text-gray-500">
                             <UserGroupIcon className="w-3.5 h-3.5 text-brand-red flex-shrink-0" />
@@ -464,7 +506,6 @@ export default function FanDashboardPage() {
                         )}
                       </div>
 
-                      {/* Action buttons */}
                       <div className="flex items-center gap-2 pt-3 border-t border-gray-100">
                         <Link
                           href={`/events/${event.eventId}`}
@@ -474,7 +515,6 @@ export default function FanDashboardPage() {
                           <ChevronRightIcon className="w-3.5 h-3.5" />
                         </Link>
 
-                        {/* View QR for ticket entries */}
                         {entry.type === 'ticket' && entry.ticketId && (
                           <Link
                             href={`/tickets/${entry.ticketId}`}
@@ -485,7 +525,6 @@ export default function FanDashboardPage() {
                           </Link>
                         )}
 
-                        {/* Cancel RSVP for free events */}
                         {entry.type === 'rsvp' &&
                           !isPast &&
                           event.status !== 'cancelled' &&

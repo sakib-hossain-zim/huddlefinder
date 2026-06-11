@@ -153,8 +153,11 @@ function VenueDashboardContent() {
     }
 
     if (connected === 'true') {
+      const stripeCheckDone = sessionStorage.getItem('hf_stripe_checked') === 'true'
+      if (!stripeCheckDone) {
+      sessionStorage.setItem('hf_stripe_checked', 'true')
       pendingStripeCheckRef.current = true
-      //router.replace('/venue-dashboard')
+    }
     }
   }, [searchParams, userDoc])
 
@@ -230,8 +233,6 @@ function VenueDashboardContent() {
           pendingStripeCheckRef.current = false
           if ((venueData as any).stripeOnboarded) {
             toast.success('Stripe connected! You can now sell tickets. 🎉')
-          } else {
-            toast.warning('Stripe setup incomplete. Please finish connecting your account.')
           }
         }
 
