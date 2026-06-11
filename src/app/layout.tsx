@@ -5,6 +5,7 @@ import Navbar from '@/components/layout/Navbar'
 import { STRINGS } from '@/utils/strings'
 import Footer from '@/components/layout/Footer'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: {
@@ -101,6 +102,7 @@ export default function RootLayout({
           <Footer />
         </Providers>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   )
