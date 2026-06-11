@@ -70,7 +70,26 @@ function getDistanceKm(
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
 }
 
-// ── Skeleton card ─────────────────────────────────────
+// ── Sort by plan priority ─────────────────────────────
+// Used for ALL fetch cases — default, city, sport, near me
+// Pro+verified → Starter+verified → Free
+// Tiebreaker: goodForWatchingSports, then Google rating
+function sortByPriority(results: Venue[]): Venue[] {
+  return [...results].sort((a, b) => {
+    const planScore = (v: Venue): number => {
+      if (v.plan === 'pro'     && v.verified) return 3
+      if (v.plan === 'starter' && v.verified) return 2
+      return 1
+    }
+    const planDiff = planScore(b) - planScore(a)
+    if (planDiff !== 0) return planDiff
+    if (a.goodForWatchingSports && !b.goodForWatchingSports) return -1
+    if (!a.goodForWatchingSports && b.goodForWatchingSports) return 1
+    return (b.googleRating ?? b.rating ?? 0) - (a.googleRating ?? a.rating ?? 0)
+  })
+}
+
+// ── Skeleton cards ────────────────────────────────────
 function VenueCardSkeleton() {
   return (
     <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden animate-pulse">
@@ -118,11 +137,11 @@ function SearchContent() {
   const [dateTo,         setDateTo]         = useState('')
   const [dateFilterOpen, setDateFilterOpen] = useState(false)
 
-  // ── Near me state ─────────────────────────────────────
-  const [nearMe,         setNearMe]         = useState(false)
-  const [userLocation,   setUserLocation]   = useState<{ lat: number; lng: number } | null>(null)
-  const [locating,       setLocating]       = useState(false)
-  const [locationError,  setLocationError]  = useState('')
+  // ── Near me ───────────────────────────────────────────
+  const [nearMe,        setNearMe]        = useState(false)
+  const [userLocation,  setUserLocation]  = useState<{ lat: number; lng: number } | null>(null)
+  const [locating,      setLocating]      = useState(false)
+  const [locationError, setLocationError] = useState('')
 
   const todayStr = new Date().toISOString().split('T')[0]
 
@@ -145,7 +164,7 @@ function SearchContent() {
     if (urlTab   !== tab)   setTab(urlTab)
   }, [searchParams])
 
-  // ── Handle near me button ─────────────────────────────
+  // ── Near me handler ───────────────────────────────────
   function handleNearMe() {
     if (!user) {
       router.push('/auth/signup')
@@ -170,7 +189,7 @@ function SearchContent() {
           lng: position.coords.longitude,
         })
         setNearMe(true)
-        setCity('')           // clear city when near me is active
+        setCity('')
         setLocating(false)
       },
       (err) => {
@@ -192,7 +211,7 @@ function SearchContent() {
       let results: Venue[] = []
 
       if (nearMe && userLocation) {
-        // ── Near me: fetch all, filter by distance ────────
+        // ── Near me: fetch all → filter by distance ───────
         const snap = await getDocs(collection(db, 'venues'))
         results = snap.docs
           .map(d => ({ venueId: d.id, ...d.data() } as Venue))
@@ -205,22 +224,23 @@ function SearchContent() {
             ) <= 25
           )
       } else if (city) {
-        // ── City selected: Firestore filters server-side ──
+        // ── City: Firestore filters server-side ───────────
         const snap = await getDocs(query(
           collection(db, 'venues'),
           where('city', '==', city)
         ))
         results = snap.docs.map(d => ({ venueId: d.id, ...d.data() } as Venue))
       } else {
-        // ── No filter: fetch first 30 sorted by plan ─────
-        const snap = await getDocs(query(
-          collection(db, 'venues'),
-          limit(30)
-        ))
+        // ── No filter: fetch ALL → sort → slice to 30 ─────
+        // Can't use Firestore limit(30) because it cuts by
+        // insertion order — pro/featured venues might not
+        // be in the first 30 documents.
+        // Fetch all → sort by priority → take top 30.
+        const snap = await getDocs(collection(db, 'venues'))
         results = snap.docs.map(d => ({ venueId: d.id, ...d.data() } as Venue))
       }
 
-      // Apply remaining client-side filters
+      // ── Apply remaining client-side filters ───────────
       if (venueType)  results = results.filter(v => v.venueType === venueType)
       if (sport)      results = results.filter(v => v.sports?.includes(sport))
       if (searchText) results = results.filter(v =>
@@ -228,33 +248,30 @@ function SearchContent() {
         v.address?.toLowerCase().includes(searchText.toLowerCase())
       )
 
-      // Sort by plan priority
-      results.sort((a, b) => {
-        const planScore = (v: Venue): number => {
-          if (v.plan === 'pro'     && v.verified) return 3
-          if (v.plan === 'starter' && v.verified) return 2
-          return 1
-        }
-        const planDiff = planScore(b) - planScore(a)
-        if (planDiff !== 0) return planDiff
-        if (a.goodForWatchingSports && !b.goodForWatchingSports) return -1
-        if (!a.goodForWatchingSports && b.goodForWatchingSports) return 1
-        return (b.googleRating ?? b.rating ?? 0) - (a.googleRating ?? a.rating ?? 0)
-      })
+      // ── Sort by priority for ALL cases ────────────────
+      // Pro+verified → Starter+verified → Free
+      // Featured venues always float to top of any list
+      results = sortByPriority(results)
 
-      // ── Near me: sort by distance ─────────────────────
+      // ── Near me: secondary sort by distance ───────────
+      // Within same plan tier, closer venues rank higher
       if (nearMe && userLocation) {
         results.sort((a, b) => {
-          const distA = getDistanceKm(
-            userLocation.lat, userLocation.lng,
-            a.location?.latitude ?? 0, a.location?.longitude ?? 0
-          )
-          const distB = getDistanceKm(
-            userLocation.lat, userLocation.lng,
-            b.location?.latitude ?? 0, b.location?.longitude ?? 0
-          )
-          return distA - distB
+          const scoreA = a.plan === 'pro' && a.verified ? 3 : a.plan === 'starter' && a.verified ? 2 : 1
+          const scoreB = b.plan === 'pro' && b.verified ? 3 : b.plan === 'starter' && b.verified ? 2 : 1
+          if (scoreA !== scoreB) return scoreB - scoreA  // plan priority first
+          const distA = getDistanceKm(userLocation.lat, userLocation.lng, a.location?.latitude ?? 0, a.location?.longitude ?? 0)
+          const distB = getDistanceKm(userLocation.lat, userLocation.lng, b.location?.latitude ?? 0, b.location?.longitude ?? 0)
+          return distA - distB  // then distance
         })
+      }
+
+      // ── Slice to 30 only when no filters applied ──────
+      // With filters: show all matching results
+      // Without filters: show top 30 priority venues
+      const hasFilters = city || nearMe || venueType || sport || searchText
+      if (!hasFilters) {
+        results = results.slice(0, 30)
       }
 
       setVenues(results)
@@ -304,6 +321,7 @@ function SearchContent() {
         results = results.filter(e => toDate(e.startTime) <= to)
       }
 
+      // ── Sort: featured events first, then by time ─────
       results.sort((a, b) => {
         const isFeatured = (e: VenueEvent): boolean => {
           if (e.venuePlan === 'pro')     return !e.private
@@ -422,7 +440,7 @@ function SearchContent() {
           {showFilters && (
             <div className="pb-3 space-y-3 border-t border-gray-100 pt-3">
 
-              {/* City + Near me */}
+              {/* Location */}
               <div>
                 <div className="flex items-center justify-between mb-2">
                   <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
@@ -431,8 +449,6 @@ function SearchContent() {
                   <p className="text-xs text-gray-300 italic">Popular cities</p>
                 </div>
                 <div className="flex flex-wrap gap-2">
-
-                  {/* Near me button */}
                   <button
                     onClick={handleNearMe}
                     disabled={locating}
@@ -454,7 +470,7 @@ function SearchContent() {
                       key={c}
                       onClick={() => {
                         setCity(city === c ? '' : c)
-                        setNearMe(false)   // clear near me when city selected
+                        setNearMe(false)
                         setUserLocation(null)
                         setLocationError('')
                       }}
@@ -469,7 +485,6 @@ function SearchContent() {
                     </button>
                   ))}
                 </div>
-
                 {locationError && (
                   <p className="text-xs text-red-500 mt-2 flex items-center gap-1">
                     <span>⚠️</span> {locationError}
@@ -539,8 +554,8 @@ function SearchContent() {
             </div>
           )}
 
-          {/* Tabs */}
-          <div className="flex gap-1 border-t border-gray-100 pt-3">
+          {/* ── Tabs + Near me ── */}
+          <div className="flex items-center gap-1 border-t border-gray-100 pt-3">
             <button
               onClick={() => setTab('venues')}
               className={clsx(
@@ -558,6 +573,7 @@ function SearchContent() {
                 </span>
               )}
             </button>
+
             <button
               onClick={() => setTab('events')}
               className={clsx(
@@ -574,6 +590,21 @@ function SearchContent() {
                   {events.length}
                 </span>
               )}
+            </button>
+
+            {/* ── Near me — far right ── */}
+            <button
+              onClick={handleNearMe}
+              disabled={locating}
+              className={clsx(
+                'flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold transition-all ml-auto disabled:opacity-50',
+                nearMe
+                  ? 'bg-brand-red text-white'
+                  : 'text-gray-500 hover:text-brand-charcoal'
+              )}
+            >
+              <MapPinIcon className="w-4 h-4" />
+              {locating ? 'Locating...' : nearMe ? 'Near me ✓' : 'Near me'}
             </button>
           </div>
 
@@ -730,8 +761,8 @@ function SearchContent() {
           </div>
         )}
 
+        {/* Results */}
         {loading ? (
-          // ── Skeleton loaders ────────────────────────────
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {tab === 'venues'
               ? [1,2,3,4,5,6,7,8].map(i => <VenueCardSkeleton key={i} />)
@@ -744,6 +775,7 @@ function SearchContent() {
               <p className="text-sm text-gray-400 mb-4">
                 {venues.length} venue{venues.length !== 1 ? 's' : ''} found
                 {nearMe ? ' near you' : city ? ` in ${city}` : ''}
+                {!city && !nearMe && ` · showing top ${venues.length} by plan`}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 {venues.map(venue => (
