@@ -97,19 +97,49 @@ function VenueDashboardContent() {
   // ensures handleSubscriptionSuccess only runs once
   const subscriptionHandledRef = useRef(false)
 
-  useEffect(() => {
+  // useEffect(() => {
+  //   const subscription = searchParams.get('subscription')
+  //   const plan         = searchParams.get('plan')
+  //   const connected    = searchParams.get('connected')
+
+  //   // ── Only handle subscription success once ────────────
+  //   if (
+  //     subscription === 'success' &&
+  //     plan &&
+  //     userDoc?.venueId &&
+  //     !subscriptionHandledRef.current
+  //   ) {
+  //     subscriptionHandledRef.current = true
+  //     handleSubscriptionSuccess(plan)
+  //   }
+
+  //   if (connected === 'true') {
+  //     pendingStripeCheckRef.current = true
+  //     router.replace('/venue-dashboard')
+  //   }
+  // }, [searchParams, userDoc])
+
+    useEffect(() => {
     const subscription = searchParams.get('subscription')
     const plan         = searchParams.get('plan')
     const connected    = searchParams.get('connected')
 
-    // ── Only handle subscription success once ────────────
+    // ── Use sessionStorage to persist across component mounts ──
+    // subscriptionHandledRef resets when component unmounts
+    // sessionStorage persists for the whole browser session
+    // Using plan as value so upgrading again (starter→pro)
+    // still shows the toast correctly
+    const alreadyHandled = sessionStorage.getItem('hf_sub_handled') === plan
+
     if (
       subscription === 'success' &&
       plan &&
       userDoc?.venueId &&
-      !subscriptionHandledRef.current
+      !subscriptionHandledRef.current &&
+      !alreadyHandled
     ) {
       subscriptionHandledRef.current = true
+      sessionStorage.setItem('hf_sub_handled', plan)
       handleSubscriptionSuccess(plan)
     }
 
@@ -119,8 +149,33 @@ function VenueDashboardContent() {
     }
   }, [searchParams, userDoc])
 
-  async function handleSubscriptionSuccess(plan: string) {
+  // async function handleSubscriptionSuccess(plan: string) {
+  //   if (!userDoc?.venueId) return
+  //   try {
+  //     await updateDoc(doc(db, 'venues', userDoc.venueId), {
+  //       plan,
+  //       featured:            plan === 'pro',
+  //       promotionsUsed:      0,
+  //       promotionCycleStart: new Date(),
+  //       subscriptionStatus:  'active',
+  //       downgradingTo:       null,
+  //       subscriptionEndsAt:  null,
+  //       updatedAt:           new Date(),
+  //     })
+  //     await refreshUserDoc()
+  //     toast.success(`Welcome to ${plan.charAt(0).toUpperCase() + plan.slice(1)}! 🎉`)
+  //     router.replace('/venue-dashboard')
+  //     if (userDoc.venueId) fetchDashboardData(userDoc.venueId)
+  //   } catch (err) {
+  //     console.error('Subscription success handler error:', err)
+  //   }
+  // }
+
+    async function handleSubscriptionSuccess(plan: string) {
     if (!userDoc?.venueId) return
+    // ── Clear URL immediately before any async operations ──
+    // Prevents URL params persisting in Next.js router cache
+    router.replace('/venue-dashboard')
     try {
       await updateDoc(doc(db, 'venues', userDoc.venueId), {
         plan,
@@ -134,7 +189,6 @@ function VenueDashboardContent() {
       })
       await refreshUserDoc()
       toast.success(`Welcome to ${plan.charAt(0).toUpperCase() + plan.slice(1)}! 🎉`)
-      router.replace('/venue-dashboard')
       if (userDoc.venueId) fetchDashboardData(userDoc.venueId)
     } catch (err) {
       console.error('Subscription success handler error:', err)
