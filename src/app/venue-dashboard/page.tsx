@@ -125,8 +125,12 @@ function VenueDashboardContent() {
     const connected    = searchParams.get('connected')
 
     // ── Clear URL immediately if subscription params present ──
-    if (subscription === 'success' && plan) {
-      router.replace('/venue-dashboard')
+    // if (subscription === 'success' && plan) {
+    //   router.replace('/venue-dashboard')
+    // }
+
+    if (subscription === 'success' || connected === 'true') {
+     window.history.replaceState({}, '', '/venue-dashboard')
     }
 
     // ── Use sessionStorage to persist across component mounts ──
