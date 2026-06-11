@@ -154,7 +154,7 @@ function VenueDashboardContent() {
 
     if (connected === 'true') {
       pendingStripeCheckRef.current = true
-      router.replace('/venue-dashboard')
+      //router.replace('/venue-dashboard')
     }
   }, [searchParams, userDoc])
 
