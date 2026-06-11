@@ -124,6 +124,11 @@ function VenueDashboardContent() {
     const plan         = searchParams.get('plan')
     const connected    = searchParams.get('connected')
 
+    // ── Clear URL immediately if subscription params present ──
+    if (subscription === 'success' && plan) {
+      router.replace('/venue-dashboard')
+    }
+
     // ── Use sessionStorage to persist across component mounts ──
     // subscriptionHandledRef resets when component unmounts
     // sessionStorage persists for the whole browser session
@@ -173,9 +178,6 @@ function VenueDashboardContent() {
 
     async function handleSubscriptionSuccess(plan: string) {
     if (!userDoc?.venueId) return
-    // ── Clear URL immediately before any async operations ──
-    // Prevents URL params persisting in Next.js router cache
-    router.replace('/venue-dashboard')
     try {
       await updateDoc(doc(db, 'venues', userDoc.venueId), {
         plan,
