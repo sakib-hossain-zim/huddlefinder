@@ -138,17 +138,17 @@ function VenueDashboardContent() {
     // sessionStorage persists for the whole browser session
     // Using plan as value so upgrading again (starter→pro)
     // still shows the toast correctly
-    //const alreadyHandled = sessionStorage.getItem('hf_sub_handled') === plan
+    const alreadyHandled = sessionStorage.getItem('hf_sub_handled') === plan
 
     if (
       subscription === 'success' &&
       plan &&
       userDoc?.venueId &&
-      !subscriptionHandledRef.current 
-      //!alreadyHandled
+      !subscriptionHandledRef.current &&
+      !alreadyHandled
     ) {
       subscriptionHandledRef.current = true
-      //sessionStorage.setItem('hf_sub_handled', plan)
+      sessionStorage.setItem('hf_sub_handled', plan)
       handleSubscriptionSuccess(plan)
     }
 
