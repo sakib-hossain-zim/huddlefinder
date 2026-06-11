@@ -271,13 +271,14 @@ export default function Navbar() {
             <span className="text-[10px] font-semibold">{STRINGS.discover}</span>
           </Link>
 
+          
           <Link
-            href="/search"
+            href="/search?tab=events"
             className={`flex flex-col items-center gap-0.5 px-3 py-1 min-w-[56px] ${
-              isActive('/search') ? 'text-brand-red' : 'text-gray-400'
+              pathname === '/search' ? 'text-brand-red' : 'text-gray-400'
             }`}
           >
-            {isActive('/search')
+            {pathname === '/search'
               ? <CalendarDaysIconSolid className="w-6 h-6" />
               : <CalendarDaysIcon className="w-6 h-6" />
             }
