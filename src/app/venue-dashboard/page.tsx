@@ -83,21 +83,36 @@ function VenueDashboardContent() {
   const [reactivating, setReactivating] = useState(false)
   const [showPast,     setShowPast]     = useState(false)
 
-  const [upcomingPage, setUpcomingPage] = useState(1)
-  const [pastPage,     setPastPage]     = useState(1)
+  const [upcomingPage,   setUpcomingPage]   = useState(1)
+  const [pastPage,       setPastPage]       = useState(1)
   const [promotionsUsed, setPromotionsUsed] = useState(0)
   const [daysUntilReset, setDaysUntilReset] = useState(0)
 
+  // ── Ref: prevents Stripe Connect incomplete toast ──────
+  // Only shows success if stripeOnboarded=true in Firestore
   const pendingStripeCheckRef = useRef(false)
+
+  // ── Ref: prevents subscription toast loop ─────────────
+  // refreshUserDoc() triggers useEffect again — this ref
+  // ensures handleSubscriptionSuccess only runs once
+  const subscriptionHandledRef = useRef(false)
 
   useEffect(() => {
     const subscription = searchParams.get('subscription')
     const plan         = searchParams.get('plan')
     const connected    = searchParams.get('connected')
 
-    if (subscription === 'success' && plan && userDoc?.venueId) {
+    // ── Only handle subscription success once ────────────
+    if (
+      subscription === 'success' &&
+      plan &&
+      userDoc?.venueId &&
+      !subscriptionHandledRef.current
+    ) {
+      subscriptionHandledRef.current = true
       handleSubscriptionSuccess(plan)
     }
+
     if (connected === 'true') {
       pendingStripeCheckRef.current = true
       router.replace('/venue-dashboard')
@@ -134,12 +149,9 @@ function VenueDashboardContent() {
     }
   }, [userDoc])
 
-  // ── Optimized: venue + events fetched in parallel ──────
   async function fetchDashboardData(venueId: string) {
     setLoading(true)
     try {
-      // ── Run both Firestore queries simultaneously ──────
-      // Previously sequential (~700ms), now parallel (~400ms)
       const [venueSnap, eventsSnap] = await Promise.all([
         getDoc(doc(db, 'venues', venueId)),
         getDocs(query(
@@ -149,12 +161,11 @@ function VenueDashboardContent() {
         )),
       ])
 
-      // ── Process venue data ─────────────────────────────
       if (venueSnap.exists()) {
         const venueData = { venueId: venueSnap.id, ...venueSnap.data() } as Venue
         setVenue(venueData)
 
-        // Stripe onboarding toast check
+        // ── Stripe Connect toast — only if fully onboarded ──
         if (pendingStripeCheckRef.current) {
           pendingStripeCheckRef.current = false
           if ((venueData as any).stripeOnboarded) {
@@ -180,7 +191,6 @@ function VenueDashboardContent() {
         }
       }
 
-      // ── Process events data ────────────────────────────
       const now       = new Date()
       const allEvents = eventsSnap.docs.map(d => ({
         eventId: d.id, ...d.data()
